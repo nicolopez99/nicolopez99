@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
+    <title>¿quienes somos?</title>
     <link rel="shortcut icon" href="../imagenes/estrella.png">
-    <link rel="stylesheet" href="../estilos.css">
-
+    <link rel="stylesheet" href="../estiloss.css">
 </head>
-<body id="blog">
-    
-    <header id="headerindex" > 
-    <a class="bajar" href="#indexfooter">bajar</a>
-    <a class="usuario" href="./usuario.html"><img src="../imagenes/icon-5887113_640.png" alt="usuario"></a><div class="div2"><a href="./usuario.html" >usuario</a></div>
-    <div><h1>vacciones al fin del mundo</h1></div>
-    <nav > 
-    <ul class="menu">
-        <div>
-    <li> <a href="../index.html" >home</a></li>
-    <li><a href="./quinessomos.html">¿quienes somos?</a></li>
-    <li><a href="./blog.html">blog</a></li>
-    <li><a href="./usuario.html">usuarios</a></li>
-    <li><a href="./ventas.html">ventas</a></li></div> <a href=""></a>
-    </ul>
-</nav>
-    </header><!--cabecera--><!--cabecera-->
+<body id="quienessomos">
+    <header class="hero">
+        <nav class="nav container" id="nav">
+          <h2 class="nav__logo">TuLogo.</h2>
+        <ul class="nav__links">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="./usuario.html" class="nav__link">usuario</a></li>
+          <li class="nav__item"><a href="./ventas.html" class="nav__link">ventas</a></li>
+          <li class="nav__item"><a href="./blog.html" class="nav__link">blog</a></li>
+          <li class="nav__item"><a href="./quinessomos.html" class="nav__link">¿quienes somos?</a></li>
+        </ul>
+        <a href="#nav" class="nav__hamburguer">
+          <img src="../imagenes/burger_line_list_menu_nav_navigation_option_icon_123231.png" class="nav__icon">
+        </a>
+        <a href="#" class="nav__close">
+          <img src="../imagenes/close_111152.png" class="nav__icon">
+        </a>
+        </nav>
+      </header> 
 <main id="mainblog">
  
     <h2 id="blogh2">ultimas novedas ,proximas fechas y descuentos</h2>
@@ -51,16 +52,18 @@
 
     <img src ="../imagenes/plane-4301615_640.png" alt="avion"></div>
 </main>
-<footer id="indexfooter"><span>nuestras redes sociales</span>
-    <div><img src="../imagenes/facebook-1924510_640.png" alt="facebook">
-        <img src="../imagenes/twitter-2430933_640.png" alt="twitter"> 
-        <img src="../imagenes/instagram-1675670_640.png" alt="instagram">
-    </div> 
-    <div class="redessociales">
-    <a href="https://www.facebook.com" target="_blank">facebook</a>
-    <a href="https://www.twitter.com/" target="_blank">twitter</a>
-    <a href="https://www.instagram.com/"target="_blank" >instagram</a></div> 
-    <span class="subir">
-    <a  href=#headerindex>subir</a>
-    </span>
-    <p>derechos de autor bla bla</p>
+<footer id="indexfooter">
+    <!-- Pie de página -->
+    <span id="redessocialestexto">Nuestras redes sociales</span>
+    <div class="logoderedes">
+        <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook-1924510_640.png" alt="facebook"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img src="../imagenes/twitter-2430933_640.png" alt="twitter"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram-1675670_640.png" alt="instagram"></a>
+    </div>
+     <!--<span class="subir">
+       <a  href="#headerindex">Subir</a>
+    </span>-->
+    <p id="indexderechos">Derechos de autor bla bla</p>
+</footer>
+</body>
+</html>

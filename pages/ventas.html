@@ -6,58 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ventas</title>
     <link rel="shortcut icon" href="../imagenes/estrella.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../estiloss.css">
 
 </head>
-<body>
-    
-    <header id="headerindex" > 
-        <a class="bajar" href="#indexfooter">bajar</a>
-        <a class="usuario" href="./usuario.html"><img src="../imagenes/icon-5887113_640.png" alt="usuario"></a><div class="div2"><a href="./usuario.html" >usuario</a></div>
-        <div><h1>vacciones al fin del mundo</h1></div>
-        <nav > 
-        <ul class="menu">
-            <div>
-        <li> <a href="../index.html" >home</a></li>
-        <li><a href="./quinessomos.html">¿quienes somos?</a></li>
-        <li><a href="./blog.html">blog</a></li>
-        <li><a href="./usuario.html">usuarios</a></li>
-        <li><a href="./ventas.html">ventas</a></li></div> <a href=""></a>
+<body id="quienessomos">
+    <header class="hero">
+        <nav class="nav container" id="nav">
+          <h2 class="nav__logo">TuLogo.</h2>
+        <ul class="nav__links">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="./usuario.html" class="nav__link">usuario</a></li>
+          <li class="nav__item"><a href="./ventas.html" class="nav__link">ventas</a></li>
+          <li class="nav__item"><a href="./blog.html" class="nav__link">blog</a></li>
+          <li class="nav__item"><a href="./quinessomos.html" class="nav__link">¿quienes somos?</a></li>
         </ul>
-    </nav>
-        </header><!--cabecera-->
+        <a href="#nav" class="nav__hamburguer">
+          <img src="../imagenes/burger_line_list_menu_nav_navigation_option_icon_123231.png" class="nav__icon">
+        </a>
+        <a href="#" class="nav__close">
+          <img src="../imagenes/close_111152.png" class="nav__icon">
+        </a>
+        </nav>
+      </header> 
 <main id="ventasmain">
-    <h2 id="mainpventas">aca estan las mejores ventas y valarocaiones del mes</h2>
+    <h2>aca estan las mejores ventas y valarocaiones del mes</h2>
+    <section id="topventas">
+    <h3>top ventas</h3>
     <br>
-    <p id="h2ventas" >top ventas</p>
-    <br>
-    <div id="topventas">
+    <div>
         <img class="imgplaya2" src="../imagenes/playa2.jpg" alt="playa1">
         <img class="imgplaya1" src="../imagenes/playa1.jpg" alt="playa2">
         <img class="imgplaya3" src="../imagenes/paisaje.jpg" alt="paise"></div>
-        <p id="h3ventas" >mejores valorados</p>
 
-        <br>
-        <div id="mejoresvalorados">
+        
+
+    <section id="mejoresvalorados">
+      <h3 >mejores valorados</h3></section>
             <img class="imgplaya3" src="../imagenes/paisaje.jpg" alt="paise">
             <img class="imgplaya1" src="../imagenes/playa1.jpg" alt="playa2">
-            <img class="imgplaya2" src="../imagenes/playa2.jpg" alt="playa1"></div>
+            <img class="imgplaya2" src="../imagenes/playa2.jpg" alt="playa1"></div></section>
         </main>
-<footer id="indexfooter"><span>nuestras redes sociales</span>
-    <div><img src="../imagenes/facebook-1924510_640.png" alt="facebook">
-        <img src="../imagenes/twitter-2430933_640.png" alt="twitter"> 
-        <img src="../imagenes/instagram-1675670_640.png" alt="instagram">
-    </div> 
-    <div class="redessociales">
-        <a href="https://www.facebook.com" target="_blank">facebook</a>
-        <a href="https://www.twitter.com/" target="_blank">twitter</a>
-        <a href="https://www.instagram.com/"target="_blank" >instagram</a></div> 
-    <span class="subir">
-        <a  href=#headerindex>subir</a>
-    </span>
-        <p id="indexderechos">derechos de autor bla bla</p>
-
-
-</footer></body>
-
-
+        <footer id="indexfooter">
+            <!-- Pie de página -->
+            <span id="redessocialestexto">Nuestras redes sociales</span>
+            <div class="logoderedes">
+                <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook-1924510_640.png" alt="facebook"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="../imagenes/twitter-2430933_640.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram-1675670_640.png" alt="instagram"></a>
+            </div>
+             <!--<span class="subir">
+               <a  href="#headerindex">Subir</a>
+            </span>-->
+            <p id="indexderechos">Derechos de autor bla bla</p>
+        </footer>
+    </body>
+    </html>
