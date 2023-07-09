@@ -169,11 +169,9 @@
     text-align: center;
   }
   
-  /* CARRUSEL */
+
   @media (max-width: 767px) {
-    .carousel {
-      display: none;
-    }
+
     .mainindex {
       display: flex;
       flex-direction: column;
@@ -306,8 +304,7 @@
 }
 /* pages ventas */
 #ventasmain {
-    display: flex;
-    flex-direction: column;
+
     justify-content: center;
     text-align: center;
   }
@@ -319,88 +316,112 @@
     text-align: center;
   }
   
-  /* es para todas las imagenes en general */
+  /* */
+  
+  
+  
+  .angry-grid {
+    display: grid; 
+    justify-content: center;
+    
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+
   .imgventas {
     width: 150px;
     height: 150px;
-    display: flex;
     justify-content: center;
     object-fit: cover;
-    border-radius: 2%;
-  }
+  border-radius: 2%;
+  gap: 20px
+  ;
+
+}
+
+   
+ #item-0 {
+ 
+    background-color: #c7ebda; 
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+    
+ }
+ #item-1 {
+ 
+    background-color: #c7789b; 
+    grid-row-start: 2;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    
+ }
+ #item-2 {
+ 
+    background-color: #d5d5d6; 
+    grid-row-start: 3;
+    grid-column-start: 2;
+ 
+    grid-row-end: 4;
+    grid-column-end: 4;
+    
+ }
+ #item-3 {
+ 
+    background-color: #ddbdb9; 
+  display: grid;
   
-  .ventasmain {
-    justify-items: center;
-  }
-  
-  .gridventas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1em;
-    justify-items: center;
-    background-color: chartreuse;
-    flex-direction: column-reverse;
-  }
-  
-  .mejoresventas {
-    display: flex;
-    flex-direction: row;
+justify-content: center;
+    text-align: center;
+    
+ }
+ #item-4 {
+ 
+    background-color: #dd57e5; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+ }
+ #item-5 {
+
+
+ 
+    background-color: #e585ab; 
     justify-content: center;
-    gap: 2em;
-  }
+ 
+ }
+
+
+ @media (max-width: 768px){
+.angry-grid{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     gap: 10px
+     ;
+ }
+}
   
-  @media (max-width: 768px) {
-    .gridventas {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .mejoresventas {
-      display: grid;
-      justify-content: center;
-    }
-  }
-  
+
   /* pages usuario */
-  .usuario {
-    background-color: brown;
-  }
-  
-  #usuario {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  #forum {
-    background-color: #464749;
-    border: #e3e3e3;
-    color: #000000;
-    border-radius: 5%;
-  }
-  
-  #emailHelp {
-    color: burlywood;
-  }
-  
-  #boton {
-    background-color: red;
-    color: white;
-  }
-  
-  .gridusuario {
-    display: grid;
-    grid-column: auto;
-    justify-content: center;
-  }
-  
-  .gridusuario,
-  h3 {
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-  }
+ .usuario{
+  background-color: aquamarine;
+ }
+ .caja{
+  height: 450px;
+  background-image: url(./imagenes/OIP.jpeg) ;
+  background-repeat: no-repeat
+ ;
+ }
+
   
   @media (max-width: 768px) {
     .miles_de_ofertas {
@@ -452,4 +473,11 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
-  
+
+
+
+  .custom-carousel {
+    position: relative;
+    z-index: -1
+    ; /* Modifica este valor para ajustar el z-index */
+  }

@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="./estiloss.css">
 </head>
 <body class="index">
-  <header class="hero">
-    <nav class="nav container" id="nav">
-      <h2 class="nav__logo">vacciones.</h2>
-      <ul class="nav__links">
+  <header class="hero" >
+    <nav class="nav container" id="nav" >
+      <h2 class="nav__logo" style="z-index: 3;">vacciones.</h2>
+      <ul class="nav__links"style="z-index: 2;" >
         <li class="nav__item"><a href="./index.html" class="nav__link">Inicio</a></li>
         <li class="nav__item"><a href="./pages/usuario.html" class="nav__link">usuario</a></li>
         <li class="nav__item"><a href="./pages/ventas.html" class="nav__link">ventas</a></li>
@@ -27,10 +27,10 @@
           <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/2362135-instagram-photo-round-social_85523.png" alt="instagram"></a>
         </div>
       </ul>
-      <a href="#nav" class="nav__hamburguer">
+      <a href="#nav" class="nav__hamburguer"style="z-index: 3;">
         <img src="../imagenes/burger_line_list_menu_nav_navigation_option_icon_123231.png" class="nav__icon">
       </a>
-      <a href="#" class="nav__close">
+      <a href="#" class="nav__close" style="z-index: 10;">
         <img src="../imagenes/close_111152.png" class="nav__icon">
       </a>
     </nav>
@@ -42,7 +42,7 @@
         </div>
         <h2 id="vacciones">Las mejores vacaciones del sur</h2>
         
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1;">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -98,6 +98,29 @@
         <div id="ofertass">Las mejores ofertas hasta el 2023, aprovecha miles de descuentos hasta el 80% <a href="./pages/ventas.html"><b>comprar</b></a></div>
       </div>
     </div>
+    <section>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+       <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet, magni non sit laboriosam numquam ipsa eligendi rerum iure corporis similique quasi dolore ab aspernatur laudantium quibusdam necessitatibus minus beatae?</span>
+        <span>Odio vel ducimus amet sapiente quo nesciunt architecto eum dolor adipisci ad, ipsam, rem esse suscipit consequuntur assumenda quibusdam doloremque reiciendis perferendis autem in possimus accusantium totam consequatur? Nobis, atque!</span>
+        <span>Laboriosam, ipsum adipisci earum suscipit cumque repudiandae esse ab impedit quas illo hic eaque, laborum voluptatem facere similique molestias dignissimos dolorum maxime distinctio ratione dolore ut? Saepe soluta ipsum architecto?</span>
+        <span>Soluta odit, aliquid deleniti repellendus nemo natus veritatis beatae porro impedit rerum inventore ducimus explicabo cum, quia obcaecati vel consequuntur placeat et ipsa distinctio tempora ab neque atque voluptatibus! Harum?</span>
+      </p>
+      <article>
+        <img src="./imagenes/Imagen de WhatsApp 2023-07-08 a las 19.30.19.jpg" alt="">
+      </article>
+
+        
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">descuentos hasta el 50%</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          ...
+        </div>
+      </div>
+    </section>
   </main>
   <footer id="indexfooter">
     <!-- Pie de página -->
