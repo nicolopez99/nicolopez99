@@ -57,13 +57,20 @@
     .angry-grid {
       display: flex;
       flex-direction: column;
-      text-align: center;
+
       gap: 10px;
       height: auto;
     }
     #ventasbody {
       background-color: white;
     }
+    .card .front img {
+      position:fixed;
+
+      width: 100%;
+      height: 100%;
+      text-align: unset;
+  }
   }
 
     /*media queris usuario*/
