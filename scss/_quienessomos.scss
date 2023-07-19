@@ -1,0 +1,70 @@
+/* page quines somos */
+  
+  /* main */
+  .quienessomosgrid {
+    display: grid;
+  
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .estamos_para_ayudarte {
+    background: rgb(17,231,221);
+    background: linear-gradient(45deg, rgba(17,231,221,1) 19%, rgba(47,221,162,1) 60%, rgba(4,173,236,1) 100%);
+    grid-row-start: 1;
+    grid-column-start: 1;
+  
+    grid-row-end: 4;
+    grid-column-end: 3;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #mapa {
+    display: grid;
+    justify-items: center;
+  }
+  
+  .mapa {
+    display: grid;
+    justify-content: center;
+    object-fit: cover;
+    grid-column: 2/-1;
+    width: auto;
+    height: auto;
+    border: 1px solid #f1c40f;
+    border: 1px solid #f1c40f;
+  }
+  
+  .mapa {
+    display: grid;
+    justify-items: center;
+  }
+  
+  /* section 2 */
+  .errores {
+    background: rgb(231,77,17);
+    background: linear-gradient(45deg, rgba(231,77,17,1) 19%, rgba(243,24,24,1) 60%, rgba(255,252,30,1) 100%);
+    grid-row-start: 1;
+    grid-column-start: 3;
+  
+    grid-row-end: 4;
+    grid-column-end: 5;
+  }
+  
+  /* aside */
+  .asidequienes {
+    color: #000;
+    font-size: 25px;
+    background-color: #9d9dea;
+    grid-row-start: 4;
+    grid-column-start: 1;
+  
+    grid-row-end: 5;
+    grid-column-end: 5;
+    text-align: center;
+  }
