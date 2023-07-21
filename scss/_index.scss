@@ -1,20 +1,14 @@
- /* CONTENIDO PRINCIPAL INDEX */
-  /* BODY */
-  #mainindex {
 
-  }
-  
-  /* TITULO DEL BODY */
-  
-  
-  /* contenido principal de index */
-
+ /* BODY */
   .index
-  {
+  { 
+    /* contenido principal de index */
     #mainindex{
    @extend %color;
     font-family: "roboto";
     @extend %texto;
+      /* TITULO DEL BODY */
+
       h2 
       {
     display: flex;

@@ -1,6 +1,6 @@
   /* pages usuario */
   .bodyusuario {
-    background-color: rgb(0, 0, 0);
+    
   .usuario {
     background-color: rgb(0, 0, 0);
   }
@@ -9,6 +9,9 @@
     display: flex;
     align-items: center;
   }
+  .img-fluid{
+  min-height:-webkit-fill-available ;
+
+  }
 }
-  
   
