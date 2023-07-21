@@ -1,4 +1,13 @@
 /*variables*/
+.mainventas .card .back, .mainventas .card .front h3, .mainventas #item-4, .mainventas #item-2, .mainventas #item-0, .quienessomosgrid .estamos_para_ayudarte, .quienessomosgrid, .index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto, .nav {
+  text-align: center;
+}
+
+#mainblog, .index #mainindex {
+  background: rgb(17, 231, 221);
+  background: linear-gradient(45deg, rgb(17, 231, 221) 19%, rgb(47, 221, 162) 60%, rgb(4, 173, 236) 100%);
+}
+
 /*generales*/
 * {
   padding: 0;
@@ -42,7 +51,6 @@ body {
   padding: 40px 0;
   display: grid;
   justify-content: space-between;
-  align-items: center;
   grid-template-columns: repeat(2, max-content);
 }
 
@@ -55,13 +63,17 @@ body {
 /* TITULO general*/
 .nav__logo {
   font-size: 2.5rem;
-  z-index: 1;
+  z-index: 2;
   font-family: "roboto";
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 10;
 }
 
 /* MENU HAMBURGUESA general */
 .nav__hamburguer,
 .nav__close {
+  z-index: 7;
   cursor: pointer;
   grid-column: -2/-1;
   grid-row: 1/2;
@@ -69,10 +81,12 @@ body {
 }
 
 .nav__hamburguer {
+  z-index: 3;
   transform: var(--state-hamburguer);
 }
 
 .nav__close {
+  z-index: 10;
   transform: var(--state-close);
 }
 
@@ -95,6 +109,7 @@ body {
   padding-left: 5%;
   transform: var(--state-menu);
   transition: 0.3s transform;
+  z-index: 2;
 }
 
 .nav__item {
@@ -212,13 +227,13 @@ body {
   color: #babdc5;
 }
 #indexfooter #redessocialestexto {
-  text-align: center;
   color: #babdc5;
 }
 #indexfooter .logoderedes {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
   margin-left: 5px;
 }
 #indexfooter #indexderechos {
@@ -235,7 +250,6 @@ footer img {
 
 .logoderedes a {
   margin-left: 1%;
-  text-align: center;
   justify-content: center;
 }
 
@@ -250,44 +264,33 @@ footer img {
 /*index*/
 /* CONTENIDO PRINCIPAL INDEX */
 /* BODY */
-#mainindex {
-  background: rgb(17, 231, 221);
-  background: linear-gradient(45deg, rgb(17, 231, 221) 19%, rgb(47, 221, 162) 60%, rgb(4, 173, 236) 100%);
-  font-family: "roboto";
-  text-align: center;
-}
-
 /* TITULO DEL BODY */
-h2 {
+/* contenido principal de index */
+.index #mainindex {
+  font-family: "roboto";
+}
+.index #mainindex h2 {
   display: flex;
   justify-content: center;
 }
-
-/* contenido principal de index */
-.flexindex {
+.index #mainindex .flexindex {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
-
-.textoindex {
+.index #mainindex .textoindex {
   justify-content: center;
-  text-align: center;
 }
-
-.btn {
-  background-color: #76dcb5;
-}
-
-.offcanvas {
-  background-color: bisque;
-}
-
-#ofertass {
+.index #mainindex #ofertass {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.index #mainindex .offcanvas {
+  background-color: bisque;
+}
+.index #mainindex .btn {
+  background-color: #76dcb5;
 }
 
 /*usuario*/
@@ -295,12 +298,10 @@ h2 {
 .bodyusuario {
   background-color: rgb(0, 0, 0);
 }
-
-.usuario {
+.bodyusuario .usuario {
   background-color: rgb(0, 0, 0);
 }
-
-.image-container {
+.bodyusuario .image-container {
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -311,31 +312,29 @@ h2 {
 /* main */
 .quienessomosgrid {
   display: grid;
+  background: rgb(17, 231, 221);
+  background: linear-gradient(45deg, rgb(17, 231, 221) 19%, rgb(47, 221, 162) 60%, rgb(4, 173, 236) 100%);
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-  text-align: center;
+  /* section 2 */
 }
-
-.estamos_para_ayudarte {
-  background: rgb(17, 231, 221);
-  background: linear-gradient(45deg, rgb(17, 231, 221) 19%, rgb(47, 221, 162) 60%, rgb(4, 173, 236) 100%);
+.quienessomosgrid .estamos_para_ayudarte {
   grid-row-start: 1;
   grid-column-start: 1;
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 100%, rgb(29, 175, 253) 100%);
   grid-row-end: 4;
   grid-column-end: 3;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
-
-#mapa {
+.quienessomosgrid #mapa {
   display: grid;
   justify-items: center;
 }
-
-.mapa {
+.quienessomosgrid #mapa .mapa {
   display: grid;
   justify-content: center;
   object-fit: cover;
@@ -344,17 +343,11 @@ h2 {
   height: auto;
   border: 1px solid #f1c40f;
   border: 1px solid #f1c40f;
-}
-
-.mapa {
-  display: grid;
   justify-items: center;
 }
-
-/* section 2 */
-.errores {
-  background: rgb(231, 77, 17);
-  background: linear-gradient(45deg, rgb(231, 77, 17) 19%, rgb(243, 24, 24) 60%, rgb(255, 252, 30) 100%);
+.quienessomosgrid .errores {
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 0%, rgb(29, 175, 253) 30%, rgb(252, 69, 69) 100%);
   grid-row-start: 1;
   grid-column-start: 3;
   grid-row-end: 4;
@@ -365,7 +358,8 @@ h2 {
 .asidequienes {
   color: #000;
   font-size: 25px;
-  background-color: #9d9dea;
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 0%, rgb(29, 175, 253) 30%, rgb(252, 69, 69) 100%);
   grid-row-start: 4;
   grid-column-start: 1;
   grid-row-end: 5;
@@ -374,70 +368,78 @@ h2 {
 }
 
 /*ventas*/
-.angry-grid {
+.mainventas {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 0px;
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 0%, rgb(29, 175, 253) 50%, rgb(69, 252, 233) 100%);
   height: 100%;
 }
-
-#item-0 {
-  background-color: #8E7B59;
+.mainventas #item-0 {
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 100%, rgb(29, 175, 253) 100%);
   grid-row-start: 1;
   grid-column-start: 1;
+  display: grid;
+  align-content: center;
+  gap: 20px;
   grid-row-end: 2;
   grid-column-end: 2;
+  align-items: center;
+  justify-content: center;
 }
-
-#item-1 {
-  background-color: #13c47a;
+.mainventas #item-1 {
   grid-row-start: 1;
   grid-column-start: 2;
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 0%, rgb(29, 175, 253) 30%, rgb(252, 69, 69) 100%);
   grid-row-end: 2;
   grid-column-end: 3;
 }
-
-#item-2 {
-  background-color: #5DD5D5;
+.mainventas #item-2 {
   grid-row-start: 2;
   grid-column-start: 1;
+  display: grid;
+  align-content: center;
+  gap: 20px;
   grid-row-end: 3;
   grid-column-end: 2;
 }
-
-#item-3 {
-  background-color: #5BDAC8;
+.mainventas #item-3 {
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 3;
   grid-column-end: 3;
 }
-
-#item-4 {
-  background-color: #EA5AFF;
+.mainventas #item-4 {
+  display: grid;
+  align-content: center;
+  gap: 20px;
   grid-row-start: 3;
   grid-column-start: 1;
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 100%, rgb(29, 175, 253) 100%);
   grid-row-end: 4;
   grid-column-end: 2;
 }
-
-#item-5 {
-  background-color: #CD6EBB;
+.mainventas #item-5 {
   grid-row-start: 3;
   grid-column-start: 2;
+  background: rgb(58, 180, 178);
+  background: linear-gradient(90deg, rgb(58, 180, 178) 100%, rgb(29, 175, 253) 100%);
   grid-row-end: 4;
   grid-column-end: 3;
 }
-
-.card {
+.mainventas .card {
   position: relative;
-  width: 300px;
+  width: 400px;
   height: 350px;
   margin: 20px;
+  z-index: 1;
+  border-radius: 5%;
 }
-
-.card .face {
+.mainventas .card .face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -446,18 +448,15 @@ h2 {
   overflow: hidden;
   transition: 0.5s;
 }
-
-.card .front {
+.mainventas .card .front {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
 }
-
-.card .front img {
+.mainventas .card .front img {
   width: 100%;
   height: 100%;
 }
-
-.card .front h3 {
+.mainventas .card .front h3 {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -465,10 +464,8 @@ h2 {
   line-height: 45px;
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
-  text-align: center;
 }
-
-.card .back {
+.mainventas .card .back {
   transform: perspective(600px) rotateY(180deg);
   background: rgb(3, 35, 54);
   padding: 15px;
@@ -476,91 +473,77 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
-  box-shadow: 0 5px 10px #000;
+  box-shadow: 1px 1px 20px 10px rgb(255, 184, 184);
 }
-
-.card .back .link {
+.mainventas .card .back .link {
   border-top: solid 1px #f3f3f3;
   height: 50px;
   line-height: 50px;
 }
-
-.card .back .link a {
+.mainventas .card .back .link a {
   color: #f3f3f3;
 }
-
-.card .back h3 {
+.mainventas .card .back h3 {
   font-size: 30px;
   margin-top: 20px;
   letter-spacing: 2px;
 }
-
-.card .back p {
+.mainventas .card .back p {
   letter-spacing: 1px;
 }
-
-.card:hover .front {
+.mainventas .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
 }
-
-.card:hover .back {
+.mainventas .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
-
-.animacionventas {
+.mainventas .animacionventas {
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+.mainventas .textocenter {
+  justify-content: center;
+  align-items: center;
 }
 
 /*blog*/
 /* pages blog */
 /* contenido principal */
 #mainblog {
-  background: rgb(231, 77, 17);
-  background: linear-gradient(45deg, rgb(231, 77, 17) 19%, rgb(243, 24, 24) 60%, rgb(255, 252, 30) 100%);
   padding: 10px;
-  background: rgb(17, 231, 221);
-  background: linear-gradient(45deg, rgb(17, 231, 221) 19%, rgb(47, 221, 162) 60%, rgb(4, 173, 236) 100%);
+  /* aisde */
 }
-
-.blog-post {
+#mainblog .blog-fecha {
+  color: #fff6f6;
+  margin-bottom: 10px;
+  text-align: start;
+}
+#mainblog .blog-titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#mainblog .blog-post {
   text-align: center;
   margin-bottom: 20px;
   padding: 10px;
   background-color: #76dcb5;
   border: 1px solid #e3e3e3;
 }
-
-.blog-titulo {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.blog {
+#mainblog .blog {
   text-align: center;
   background-color: #76dcb5;
   border: 1px solid #e3e3e3;
 }
-
-.blog-fecha {
-  color: #fff6f6;
-  margin-bottom: 10px;
-  text-align: start;
-}
-
-/* aisde */
-.aside {
+#mainblog .aside {
   text-align: center;
   background-color: #76dcb5;
   padding: 10px;
   border: 1px solid #e3e3e3;
 }
-
-.aside h3 {
+#mainblog .aside h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -597,7 +580,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     background: rgb(231, 77, 17);
     background: linear-gradient(45deg, rgb(231, 77, 17) 19%, rgb(243, 24, 24) 60%, rgb(255, 252, 30) 100%);
   }
@@ -610,7 +592,7 @@ h2 {
 }
 /* media queris del page ventas */
 @media (max-width: 768px) {
-  .angry-grid {
+  .mainventas {
     display: flex;
     flex-direction: column;
     gap: 10px;

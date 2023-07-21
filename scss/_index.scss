@@ -1,38 +1,49 @@
  /* CONTENIDO PRINCIPAL INDEX */
   /* BODY */
   #mainindex {
-    background: rgb(17,231,221);
-    background: linear-gradient(45deg, rgba(17,231,221,1) 19%, rgba(47,221,162,1) 60%, rgba(4,173,236,1) 100%);
-    font-family: "roboto";
-    text-align: center;
+
   }
   
   /* TITULO DEL BODY */
-  h2 {
+  
+  
+  /* contenido principal de index */
+
+  .index
+  {
+    #mainindex{
+   @extend %color;
+    font-family: "roboto";
+    @extend %texto;
+      h2 
+      {
     display: flex;
     justify-content: center;
   }
-  /* contenido principal de index */
-  .flexindex {
+      .flexindex {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    @extend %texto;
   }
-  
   .textoindex {
     justify-content: center;
-    text-align: center;
-  }
-  
-  .btn {
-    background-color: #76dcb5;
-  }
-  .offcanvas {
-    background-color: bisque;
+    @extend %texto;
   }
   #ofertass{
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+    .offcanvas {
+    background-color: bisque;
+  }
+  
+  .btn {
+    background-color: #76dcb5;
+  }
+
+}
+  }
+  

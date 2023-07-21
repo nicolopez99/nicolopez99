@@ -39,7 +39,7 @@
   padding: 40px 0;
   display: grid;
   justify-content: space-between;
-  align-items: center;
+  @extend %texto;
   grid-template-columns: repeat(2, max-content);
 }
 
@@ -52,13 +52,17 @@
 /* TITULO general*/
 .nav__logo {
   font-size: 2.5rem;
-  z-index: 1;
+  z-index: 2;
   font-family: "roboto";
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 10;
 }
 
 /* MENU HAMBURGUESA general */
 .nav__hamburguer,
 .nav__close {
+  z-index: 7;
   cursor: pointer;
   grid-column: -2/-1;
   grid-row: 1/2;
@@ -66,10 +70,12 @@
 }
 
 .nav__hamburguer {
+  z-index: 3;
   transform: var(--state-hamburguer);
 }
 
 .nav__close {
+  z-index: 10;
   transform: var(--state-close);
 }
 
@@ -92,6 +98,7 @@
   padding-left: 5%;
   transform: var(--state-menu);
   transition: 0.3s transform;
+  z-index: 2;
 }
 
 .nav__item {
@@ -223,13 +230,14 @@
   color: #babdc5;
 }
 #redessocialestexto {
-  text-align: center;
+  @extend %texto;
   color: #babdc5;   
 }
 .logoderedes {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
   margin-left: 5px;
 
 
@@ -249,7 +257,7 @@ footer img
 }
 .logoderedes a {
   margin-left: 1%;
-  text-align: center;
+  @extend %texto;
   justify-content: center;
 }
 /* variableeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */

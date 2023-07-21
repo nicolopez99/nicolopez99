@@ -38,7 +38,7 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          text-align: center;
+          @extend %texto;
           background: rgb(231,77,17);
           background: linear-gradient(45deg, rgba(231,77,17,1) 19%, rgba(243,24,24,1) 60%, rgba(255,252,30,1) 100%);
         }
@@ -54,7 +54,7 @@
 
         /* media queris del page ventas */
   @media (max-width: 768px) {
-    .angry-grid {
+    .mainventas {
       display: flex;
       flex-direction: column;
 

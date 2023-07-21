@@ -1,0 +1,9 @@
+@mixin flex($display, $horizontal, $vertical){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin texto($vertical){
+    text-align: center;
+
+}
