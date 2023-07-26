@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /*variables*/
 .usuario, .bodyusuario {
-  background-color: rgb(211, 212, 210);
+  background-color: rgb(255, 255, 255);
 }
 
-.mainventas .card .back, .mainventas .card .front h3, .mainventas #item-4, .mainventas #item-2, .mainventas #item-0, .quienessomosgrid .estamos_para_ayudarte, .quienessomosgrid, .index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto, .nav {
+.mainventas .card .back, .mainventas .card .front h3, .mainventas #item-4, .mainventas #item-2, .mainventas #item-0, .quienessomosgrid .estamos_para_ayudarte, .quienessomosgrid, .index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto {
   text-align: center;
 }
 
@@ -55,6 +56,7 @@ body {
   padding: 40px 0;
   display: grid;
   justify-content: space-between;
+  text-align: left;
   grid-template-columns: repeat(2, max-content);
 }
 
@@ -438,7 +440,7 @@ footer img {
 }
 .mainventas .card {
   position: relative;
-  width: 400px;
+  width: 350px;
   height: 350px;
   margin: 20px;
   z-index: 1;
@@ -472,7 +474,7 @@ footer img {
 }
 .mainventas .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgb(3, 35, 54);
+  background: rgb(70, 67, 240);
   padding: 15px;
   color: #f3f3f3;
   display: flex;
@@ -536,6 +538,9 @@ footer img {
   padding: 10px;
   background-color: #76dcb5;
   border: 1px solid #e3e3e3;
+}
+#mainblog .reseñas {
+  color: gray;
 }
 #mainblog .blog {
   text-align: center;

@@ -39,7 +39,7 @@
   padding: 40px 0;
   display: grid;
   justify-content: space-between;
-  @extend %texto;
+  text-align: left;
   grid-template-columns: repeat(2, max-content);
 }
 

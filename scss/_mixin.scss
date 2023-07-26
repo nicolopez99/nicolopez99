@@ -1,9 +1,9 @@
-@mixin flex($display, $horizontal, $vertical){
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin flex($display, $ejey, $ejeX){
+    display: $display;
+    justify-content: $ejeX;
+    align-items: $ejey;
 }
 @mixin texto($vertical){
-    text-align: center;
+    text-align: $vertical;
 
 }
