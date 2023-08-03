@@ -27,29 +27,85 @@
 
     /* mediaqueris de page quienes somos */
   
-    @media (max-width: 768px) {
-        .gridquines {
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-        }
-      
-        .quienessomosgrid {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          @extend %texto;
-          background: rgb(231,77,17);
-          background: linear-gradient(45deg, rgba(231,77,17,1) 19%, rgba(243,24,24,1) 60%, rgba(255,252,30,1) 100%);
-        }
+    @media (max-width: 768px){
+      .subtitulo2{
+       display: none
+     } 
+     .iconos{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       height: 400px;
+       align-items: center;
+       justify-content: center;
        
-        .mapa {
-          display: flex;
-          justify-items: center;
-          width: auto;
-          height: auto;
-        }
-      }
+     }
+     .cajasiconos {
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       align-items: center;
+       justify-content: flex-start;
+       gap: 0px;
+       margin: 0px;
+       height: 200px;
+     }
+     
+     
+     
+     .sectionquienes2 {
+       background-color: rgb(195, 195, 223);
+       display: flex;
+       flex-direction: column;
+       gap: 0px; 
+     }
+     
+     
+     .subcategorias1 {
+       display: flex;
+       gap: 4%;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+     }
+     
+     .sectionquienes {
+       background-color: rgb(195, 195, 223);
+       height: auto;
+     
+       }
+     
+     
+     .holaa {
+       display: flex;
+       background-color: white;
+       width: 100%;
+       height: 80px;
+       border: 1px solid var(--color-neutral-300);
+       border-radius: 2%;
+       
+       border: 1px solid gray;
+       flex-direction: row;
+       
+       align-items: center;
+     
+       }
+     
+       .imgbonificaciones {
+        margin-left: 0px; 
+        width: 50px;
+     }
+     
+     .textoseparacion {
+       margin-left: 10px;
+     }
+     
+     .textcenter {
+       margin-left: 10px;
+       text-align: center;
+     }
+     }
 
 
         /* media queris del page ventas */

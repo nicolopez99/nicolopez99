@@ -64,6 +64,122 @@
   
   
   
+  .quienessomosdiv{
+    display: flex;
+    height: 25vh;
+    background-color: rgb(183, 201, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
+    flex-direction: column;
+    gap: 20px;
+    .barradebusqueda{
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+  }
+  .sectionquienes{
+  background-color: rgb(195, 195, 223);
+  height: 350px;
+  }
+  .subtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 300px;
+  }
+  .cajasiconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 25%;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid var(--color-neutral-300);
+    border-radius: 8px;
+    gap: 10px;
+    border: 1px solid gray;
+    .textcenter{
+      text-align: center;
+
+    }
+
+  }
+  .subtitulo2{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
   
- 
+  .quienessomosayuda{
+    gap: 20px;
+  }
+.sectionquienes2{
+  background-color: rgb(195, 195, 223);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .textoseparacion{
+      margin-left: 25px;
+    }
+}
+.subcategorias1{
   
+  display: flex;
+   
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4%;
+  
+}
+.holaa{
+  display: flex;
+  background-color: white;
+  width: 48%;
+  height: 80px;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 2%;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+.correo{
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  .correoflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  .imgcorreo{
+    height: 85px;
+
+  }}
+}
+
+.divflexayuda{
+  display: flex;
+  align-items: center;
+
+}

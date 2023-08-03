@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-#mainblog, .index #mainindex {
+#mainblog {
   background: rgb(17, 231, 221);
   background: linear-gradient(45deg, rgb(17, 231, 221) 19%, rgb(47, 221, 162) 60%, rgb(4, 173, 236) 100%);
 }
@@ -29,12 +29,12 @@ body {
 
 /* HEADER de index general*/
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../imagenes/northern-lights-gb095824a8_640.jpg");
-  background-size: cover;
-  color: #383535;
+  background-color: white;
+  color: #000000;
   width: 100%;
   height: 100%;
   font-family: "roboto";
+  border-bottom: 2px solid;
 }
 
 .hero {
@@ -70,9 +70,8 @@ body {
 .nav__logo {
   font-size: 2.5rem;
   z-index: 2;
-  font-family: "roboto";
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  width: 140px;
+  height: 140px;
   z-index: 10;
 }
 
@@ -83,7 +82,7 @@ body {
   cursor: pointer;
   grid-column: -2/-1;
   grid-row: 1/2;
-  transition: 0.4s transform;
+  transition: 0.01s transform;
 }
 
 .nav__hamburguer {
@@ -102,7 +101,7 @@ body {
 
 /* LISTA general */
 .nav__links {
-  background-color: #000;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -116,6 +115,7 @@ body {
   transform: var(--state-menu);
   transition: 0.3s transform;
   z-index: 2;
+  margin-bottom: 0;
 }
 
 .nav__item {
@@ -123,11 +123,12 @@ body {
 }
 
 .nav__link {
-  color: #fff;
+  color: #000000;
   font-family: "roboto";
   text-decoration: none;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
 /* MEDIAQUERIS MENU HAMBURGUESA */
@@ -273,8 +274,38 @@ footer img {
   /* contenido principal de index */
 }
 .index #mainindex {
+  background-color: #f5f5f5;
   font-family: "roboto";
   /* TITULO DEL BODY */
+}
+.index #mainindex .pruebaindex {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index #mainindex .pruebaindex .prueba2 {
+  background-color: black;
+  height: 75vh;
+  width: 100%;
+  background-image: url(/imagenes/Banner-Sitio-Publico.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  object-fit: cover;
+}
+.index #mainindex .imgbanner__index {
+  background-image: url(/imagenes/Banner-Sitio-Publico.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+}
+.index #mainindex .indexsection {
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
 }
 .index #mainindex h2 {
   display: flex;
@@ -297,7 +328,144 @@ footer img {
   background-color: bisque;
 }
 .index #mainindex .btn {
+  background-color: #4300d2;
+}
+
+.mujer {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
+  border: solid 0.7px #ccc;
+  background-color: #fff;
+}
+
+.linkmujer {
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color: #181818;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
+  border: solid 0.7px #ccc;
+  background-color: #fff;
+}
+
+.mujer img {
+  max-width: 100%; /* La imagen ocupará el ancho máximo de su contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+  height: 260px;
+}
+
+/* Media query para ajustar el tamaño de la imagen en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .mujer img {
+    max-width: 100%;
+  }
+}
+.section2index {
+  margin-top: 10px;
+  margin-bottom: 25px;
   background-color: #76dcb5;
+  gap: 80px;
+}
+
+.divpadre {
+  display: flex;
+  gap: 20px;
+  background-color: bisque;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulodecajasindex {
+  display: flex;
+  background: rgb(255, 251, 251);
+  text-align: start;
+  width: 100%;
+  height: 350px;
+  font-size: 35px;
+  align-items: center;
+}
+
+.cajasindex2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.divpadre2 {
+  background-color: #5759d1;
+}
+
+.divprueba1, .divprueba2, .divprueba3 {
+  background-color: white;
+  border-radius: 8px;
+  height: 154px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+}
+
+.botonvermas {
+  display: flex;
+  margin-left: 145px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.cajapadre2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  background-image: url(/imagenes/Captura\ de\ pantalla\ 2023-08-01\ 232136.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cajapadre3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  background-image: url(/imagenes/Captura\ de\ pantalla\ 2023-08-01\ 232045.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.imgbonificaciones {
+  margin-left: 20px;
+  width: 50px;
+}
+
+.textobonificaiones {
+  margin-left: 20px;
+}
+
+.indexvermas {
+  background-color: #4300d2;
+  border: none;
+  border-radius: 24px;
+  padding: 0 20px;
+  height: 48px;
 }
 
 /*usuario*/
@@ -312,6 +480,22 @@ footer img {
 }
 .bodyusuario .img-fluid {
   min-height: -webkit-fill-available;
+}
+
+.btn {
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de colores */
+}
+
+/* Estilos cuando se presiona el botón */
+.btn:active, .btn:focus {
+  background-color: black;
+  color: white;
+}
+
+.usuarioform {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*quienes somos*/
@@ -374,18 +558,134 @@ footer img {
   text-align: center;
 }
 
+.quienessomosdiv {
+  display: flex;
+  height: 25vh;
+  background-color: rgb(183, 201, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
+  flex-direction: column;
+  gap: 20px;
+}
+.quienessomosdiv .barradebusqueda {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sectionquienes {
+  background-color: rgb(195, 195, 223);
+  height: 350px;
+}
+
+.subtitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 300px;
+}
+
+.cajasiconos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 25%;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 8px;
+  gap: 10px;
+  border: 1px solid gray;
+}
+.cajasiconos .textcenter {
+  text-align: center;
+}
+
+.subtitulo2 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienessomosayuda {
+  gap: 20px;
+}
+
+.sectionquienes2 {
+  background-color: rgb(195, 195, 223);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sectionquienes2 .textoseparacion {
+  margin-left: 25px;
+}
+
+.subcategorias1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4%;
+}
+
+.holaa {
+  display: flex;
+  background-color: white;
+  width: 48%;
+  height: 80px;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 2%;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+
+.correo {
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.correo .correoflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.correo .correoflex .imgcorreo {
+  height: 85px;
+}
+
+.divflexayuda {
+  display: flex;
+  align-items: center;
+}
+
 /*ventas*/
 .mainventas {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  background: rgb(58, 180, 178);
-  background: linear-gradient(90deg, rgb(58, 180, 178) 0%, rgb(29, 175, 253) 50%, rgb(69, 252, 233) 100%);
   height: 100%;
 }
 .mainventas #item-0 {
-  background: rgb(58, 180, 178);
-  background: linear-gradient(90deg, rgb(58, 180, 178) 100%, rgb(29, 175, 253) 100%);
   grid-row-start: 1;
   grid-column-start: 1;
   display: grid;
@@ -399,8 +699,6 @@ footer img {
 .mainventas #item-1 {
   grid-row-start: 1;
   grid-column-start: 2;
-  background: rgb(58, 180, 178);
-  background: linear-gradient(90deg, rgb(58, 180, 178) 0%, rgb(29, 175, 253) 30%, rgb(252, 69, 69) 100%);
   grid-row-end: 2;
   grid-column-end: 3;
 }
@@ -425,16 +723,13 @@ footer img {
   gap: 20px;
   grid-row-start: 3;
   grid-column-start: 1;
-  background: rgb(58, 180, 178);
-  background: linear-gradient(90deg, rgb(58, 180, 178) 100%, rgb(29, 175, 253) 100%);
   grid-row-end: 4;
   grid-column-end: 2;
 }
 .mainventas #item-5 {
   grid-row-start: 3;
   grid-column-start: 2;
-  background: rgb(58, 180, 178);
-  background: linear-gradient(90deg, rgb(58, 180, 178) 100%, rgb(29, 175, 253) 100%);
+  background-color: white;
   grid-row-end: 4;
   grid-column-end: 3;
 }
@@ -516,6 +811,29 @@ footer img {
   align-items: center;
 }
 
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: scroll;
+  padding: 24px;
+  width: 500px;
+  height: 400px;
+  scroll-snap-type-x: x mandatory;
+  scroll-padding: 24px;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.scroll .itemscroll {
+  flex: 0 0 100%;
+  padding: 24px;
+  border-radius: 8px;
+  scroll-snap-align: start;
+}
+
 /*blog*/
 /* pages blog */
 /* contenido principal */
@@ -536,7 +854,7 @@ footer img {
   text-align: center;
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #76dcb5;
+  background-color: white;
   border: 1px solid #e3e3e3;
 }
 #mainblog .reseñas {
@@ -544,12 +862,12 @@ footer img {
 }
 #mainblog .blog {
   text-align: center;
-  background-color: #76dcb5;
+  background-color: #ffffff;
   border: 1px solid #e3e3e3;
 }
 #mainblog .aside {
   text-align: center;
-  background-color: #76dcb5;
+  background-color: #fdfdfd;
   padding: 10px;
   border: 1px solid #e3e3e3;
 }
@@ -581,23 +899,66 @@ footer img {
 }
 /* mediaqueris de page quienes somos */
 @media (max-width: 768px) {
-  .gridquines {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .subtitulo2 {
+    display: none;
   }
-  .quienessomosgrid {
+  .iconos {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 400px;
+    align-items: center;
     justify-content: center;
-    background: rgb(231, 77, 17);
-    background: linear-gradient(45deg, rgb(231, 77, 17) 19%, rgb(243, 24, 24) 60%, rgb(255, 252, 30) 100%);
   }
-  .mapa {
+  .cajasiconos {
     display: flex;
-    justify-items: center;
-    width: auto;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px;
+    margin: 0px;
+    height: 200px;
+  }
+  .sectionquienes2 {
+    background-color: rgb(195, 195, 223);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .subcategorias1 {
+    display: flex;
+    gap: 4%;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionquienes {
+    background-color: rgb(195, 195, 223);
     height: auto;
+  }
+  .holaa {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    border: 1px solid var(--color-neutral-300);
+    border-radius: 2%;
+    border: 1px solid gray;
+    flex-direction: row;
+    align-items: center;
+  }
+  .imgbonificaciones {
+    margin-left: 0px;
+    width: 50px;
+  }
+  .textoseparacion {
+    margin-left: 10px;
+  }
+  .textcenter {
+    margin-left: 10px;
+    text-align: center;
   }
 }
 /* media queris del page ventas */

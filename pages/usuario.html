@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="../css/scss.css">
 </head>
 <body class="bodyusuario">
-  <header class="hero">
-    <nav class="nav container" id="nav">
-      <h2 class="nav__logo" style="z-index: 4;">vacciones.</h2>
-      <ul class="nav__links" style="z-index: 3;">
+  <header class="hero" >
+    <nav class="nav container" id="nav" >
+      <div class="nav__logo " style="z-index: 3; "><a href="../index.html"><img class="nav__logo" src="../imagenes/logo.png" alt=""></a></div>
+      <ul class="nav__links"style="z-index: 2;" >
         <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
-        <li class="nav__item"><a href="./usuario.html" class="nav__link">usuario</a></li>
-        <li class="nav__item"><a href="./ventas.html" class="nav__link">ventas</a></li>
-        <li class="nav__item"><a href="./blog.html" class="nav__link">blog</a></li>
-        <li class="nav__item"><a href="./quinessomos.html" class="nav__link">¿quienes somos?</a></li>
+        <li class="nav__item"><a href="./usuario.html" class="nav__link">Usuario</a></li>
+        <li class="nav__item"><a href="./ventas.html" class="nav__link">Ventas</a></li>
+        <li class="nav__item"><a href="./blog.html" class="nav__link">Blog</a></li>
+        <li class="nav__item"><a href="./ayuda.html" class="nav__link">Ayuda</a></li>
         <div class="ocultar">
           <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/social_facebook_box_blue_256_30649.png" alt="facebook"></a>
           <a href="https://www.twitter.com/" target="_blank"><img src="../imagenes/1491579583-yumminkysocialmedia02_83111.png" alt="twitter"></a>
@@ -28,21 +28,21 @@
       <a href="#nav" class="nav__hamburguer"style="z-index: 3;">
         <img src="../imagenes/burger_line_list_menu_nav_navigation_option_icon_123231.png" class="nav__icon">
       </a>
-      <a href="#" class="nav__close"style="z-index: 10;">
+      <a href="#" class="nav__close" style="z-index: 10;">
         <img src="../imagenes/close_111152.png" class="nav__icon">
       </a>
     </nav>
-  </header> 
+  </header>
   <main class="usuario">
-    <div class="container mt-5">
+    <div class="container mt-0">
       <div class="row">
         <div class="col-md-6">
-          <img src="../imagenes/water-fall-g6eb5c225e_1280.jpg" class="img-fluid" alt="paisaje">
+          <img src="../imagenes/Captura de pantalla 2023-07-26 004307.png" class="img-fluid" alt="paisaje">
         </div>
-        <div class="col-md-6 h-100">
+        <div class="col-md-6 h-10">
           <div class="card h-100">
-            <div class="card-body">
-              <h2 class="text-center mb-4">vacciones</h2>
+            <div class=" usuarioform card-body">
+              <h2 class="text-center mb-5">vacciones</h2>
               <form>
                 <div class="mb-3">
                   <label for="inputEmail" class="form-label"style="z-index: 1;">Correo electrónico</label>
@@ -53,9 +53,9 @@
                   <input type="password" class="form-control" id="inputPassword">
                 </div>
                 <div class="d-grid">
-                  <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                  <button class="glow-on-hover btn btn-dark mb-3" id= btnChangeColors type="button" >HOVER ME, THEN CLICK ME!</button>
                 </div>
-                <p class="text-center mt-3">¿No tienes una cuenta? <a href="../index.html">Regístrate</a></p>
+                <p class="text-center ">¿No tienes una cuenta? <a href="../index.html">Regístrate</a></p>
               </form>
             </div>
           </div>

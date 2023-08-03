@@ -4,11 +4,45 @@
   { 
     /* contenido principal de index */
     #mainindex{
-   @extend %color;
+      background-color: #f5f5f5;
     font-family: "roboto";
     @extend %texto;
-      /* TITULO DEL BODY */
+    
 
+      /* TITULO DEL BODY */
+      .pruebaindex{
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .prueba2{
+          background-color: black;
+          height: 75vh;
+          width: 100%;
+          background-image: url(/imagenes/Banner-Sitio-Publico.jpg);
+          background-size: cover;
+          background-position: center;
+          max-width: 100%;
+          object-fit: cover;
+          
+        }
+
+      }
+      .imgbanner__index{
+
+     
+      background-image: url(/imagenes/Banner-Sitio-Publico.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 75vh; }
+  
+      .indexsection{
+        background-position: right;
+        background-size: cover;
+        width: 100%;
+        height: 75vh;
+      }
       h2 
       {
     display: flex;
@@ -35,9 +69,150 @@
   }
   
   .btn {
-    background-color: #76dcb5;
+    background-color:  #4300d2;
   }
 
 }
   }
+ .mujer{
   
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(68,68,68,0.2);
+  border: solid 0.7px #ccc;
+  background-color: #fff;
+  
+ }
+ .linkmujer {
+ 
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  
+  color: #181818;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(68,68,68,0.2);
+  border: solid 0.7px #ccc;
+  background-color: #fff;
+  
+}
+
+
+.mujer img {
+  max-width: 100%; /* La imagen ocupará el ancho máximo de su contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    height: 260px;
+}
+
+/* Media query para ajustar el tamaño de la imagen en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .mujer img {
+    max-width: 100%;
+  }}
+  .section2index{
+    
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background-color: #76dcb5;
+   
+    
+    
+    gap: 80px;
+  }
+  .divpadre{
+    display: flex;
+    gap: 20px;
+    background-color: bisque;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .titulodecajasindex{
+
+    display: flex;
+    background: rgb(255, 251, 251);
+    text-align: start;
+    width: 100%;
+    height: 350px;
+    font-size: 35px;
+    align-items: center;
+
+  }
+  .cajasindex2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+}
+ 
+  .divpadre2{
+    
+    background-color: #5759d1;
+  }
+  .divprueba1 , .divprueba2 , .divprueba3{
+    background-color: white;
+    border-radius: 8px;
+    height: 154px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+  }
+
+  .botonvermas{
+    display: flex;
+    margin-left: 145px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+    .cajapadre2{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    background-image: url(/imagenes/Captura\ de\ pantalla\ 2023-08-01\ 232136.png);
+    background-position: center;
+    background-size: cover;
+}
+.cajapadre3{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  width: 100%; 
+  background-image: url(/imagenes/Captura\ de\ pantalla\ 2023-08-01\ 232045.png);
+  background-position: center;
+  background-size: cover;
+}
+.imgbonificaciones{
+  margin-left: 20px;
+  width: 50px;
+}
+.textobonificaiones{
+  margin-left: 20px;
+}
+.indexvermas{
+  background-color:  #4300d2;
+  border: none;
+  border-radius: 24px;
+  padding: 0 20px;
+  height: 48px;
+}

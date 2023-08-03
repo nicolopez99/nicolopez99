@@ -3,7 +3,9 @@
     
   .usuario {
     background-color: rgb(0, 0, 0);
+
   }
+ 
   .image-container {
     min-height: 100%;
     display: flex;
@@ -15,3 +17,17 @@
   }
 }
   
+.btn {
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de colores */
+}
+
+/* Estilos cuando se presiona el botón */
+.btn:active, .btn:focus {
+  background-color: black;
+  color: white;
+}
+.usuarioform{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
