@@ -284,22 +284,13 @@ footer img {
   justify-content: center;
   align-items: center;
 }
-.index #mainindex .pruebaindex .prueba2 {
-  background-color: black;
-  height: 75vh;
+.index #mainindex .pruebaindex .banerindex {
+  height: 100%;
   width: 100%;
-  background-image: url(/imagenes/Banner-Sitio-Publico.jpg);
   background-size: cover;
   background-position: center;
   max-width: 100%;
   object-fit: cover;
-}
-.index #mainindex .imgbanner__index {
-  background-image: url(/imagenes/Banner-Sitio-Publico.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 75vh;
 }
 .index #mainindex .indexsection {
   background-position: right;
@@ -434,7 +425,7 @@ footer img {
   flex-direction: column;
   height: 50%;
   width: 100%;
-  background-image: url(/imagenes/Captura\ de\ pantalla\ 2023-08-01\ 232136.png);
+  background-image: url(/imagenes/capturadepantalla2023-08-01232136.png);
   background-position: center;
   background-size: cover;
 }
@@ -446,7 +437,7 @@ footer img {
   flex-direction: column;
   height: 50%;
   width: 100%;
-  background-image: url(/imagenes/Captura\ de\ pantalla\ 2023-08-01\ 232045.png);
+  background-image: url(/imagenes/capturadepantalla2023-08-01232045.png);
   background-position: center;
   background-size: cover;
 }
