@@ -348,15 +348,14 @@ footer img {
 }
 
 .mujer img {
-  max-width: 100%; /* La imagen ocupará el ancho máximo de su contenedor */
-  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   max-height: 100%;
   width: 100%;
   height: 260px;
 }
 
-/* Media query para ajustar el tamaño de la imagen en pantallas más pequeñas */
 @media (max-width: 768px) {
   .mujer img {
     max-width: 100%;
@@ -425,7 +424,7 @@ footer img {
   flex-direction: column;
   height: 50%;
   width: 100%;
-  background-image: url(./imagenes/capturadepantalla2023-08-01232136.png);
+  background-image: url(../imagenes/capturadepantalla2023-08-01232136.png);
   background-position: center;
   background-size: cover;
 }
@@ -437,7 +436,7 @@ footer img {
   flex-direction: column;
   height: 50%;
   width: 100%;
-  background-image: url(./imagenes/capturadepantalla2023-08-01232045.png);
+  background-image: url(../imagenes/capturadepantalla2023-08-01232045.png);
   background-position: center;
   background-size: cover;
 }
