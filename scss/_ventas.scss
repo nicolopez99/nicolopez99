@@ -1,90 +1,93 @@
-
 .mainventas {
-  display: grid; 
+  display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
- 
+
   height: 100%;
- 
+
   #item-0 {
 
-  grid-row-start: 1;
-  grid-column-start: 1;
-  display: grid;
-  align-content: center;
-  gap: 20px;
-  grid-row-end: 2;
-  grid-column-end: 2;
-  align-items: center;
-  justify-content: center;
-  @extend %texto;
-}
- 
-
-#item-1 {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 3;
-  
-}
-#item-2 {
-
-  grid-row-start: 2;
-  grid-column-start: 1;
-  display: grid;
-  align-content: center;
-  gap: 20px;
-  grid-row-end: 3;
-  grid-column-end: 2;
-  @extend %texto;
-
-}
-#item-3 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    align-items: center;
+    justify-content: center;
+    @extend %texto;
+  }
 
 
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-column-end: 3;
-  
-}
-#item-4 {
+  #item-1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
 
-  display: grid;
-  align-content: center;
-  gap: 20px;
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 2;
-  @extend %texto;
+  }
+
+  #item-2 {
+
+    grid-row-start: 2;
+    grid-column-start: 1;
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    @extend %texto;
+
+  }
+
+  #item-3 {
 
 
-  
-}
-#item-5 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+
+  }
+
+  #item-4 {
+
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    @extend %texto;
 
 
-  grid-row-start: 3;
-  grid-column-start: 2;
-  background-color: white;
-  grid-row-end: 4;
-  grid-column-end: 3;
-  
-  
-} 
 
-.card {
+  }
+
+  #item-5 {
+
+
+    grid-row-start: 3;
+    grid-column-start: 2;
+    background-color: white;
+    grid-row-end: 4;
+    grid-column-end: 3;
+
+
+  }
+
+  .card {
     position: relative;
     width: 350px;
     height: 350px;
     margin: 20px;
     z-index: 1;
     border-radius: 5%;
-}
+  }
 
-.card .face {
+  .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -92,32 +95,32 @@
     border-radius: 10px;
     overflow: hidden;
     transition: .5s;
-}
+  }
 
-.card .front {
+  .card .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
-}
+  }
 
-.card .front img {
+  .card .front img {
 
     width: 100%;
     height: 100%;
 
-}
+  }
 
-.card .front h3 {
+  .card .front h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 45px;
     line-height: 45px;
     color: #fff;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
     @extend %texto;
-}
+  }
 
-.card .back {
+  .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: rgb(70, 67, 240);
     padding: 15px;
@@ -127,69 +130,47 @@
     justify-content: space-between;
     @extend %texto;
     box-shadow: 1px 1px 20px 10px rgb(255 184 184);
-}
+  }
 
-.card .back .link {
+  .card .back .link {
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
-}
+  }
 
-.card .back .link a {
+  .card .back .link a {
     color: #f3f3f3;
-}
+  }
 
-.card .back h3 {
+  .card .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
-}
+  }
 
-.card .back p {
+  .card .back p {
     letter-spacing: 1px;
-} 
+  }
 
-.card:hover .front {
+  .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
-}
+  }
 
-.card:hover .back {
+  .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
-}
-.animacionventas {
+  }
+
+  .animacionventas {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-}
-.textocenter{
-  justify-content: center;
-  align-items: center;
+  }
 
-}
-}
+  .textocenter {
+    justify-content: center;
+    align-items: center;
 
-
-.scroll{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  overflow-x: scroll;
-  padding: 24px;
-  width: 500px;
-  height: 400px;
-  scroll-snap-type-x: x mandatory;
-  scroll-padding: 24px;
-  border-radius: 8px;
-  gap: 12px;
-}
-.scroll .itemscroll{
-  flex: 0 0 100%;
-  padding: 24px;
-  border-radius: 8px;
-  scroll-snap-align: start
-  ;
+  }
 }
