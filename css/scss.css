@@ -4,7 +4,7 @@
   background-color: rgb(255, 255, 255);
 }
 
-.mainventas .card .back, .mainventas .card .front h3, .mainventas #item-4, .mainventas #item-2, .mainventas #item-0, .index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto {
+.card .back, .card .front h3, #item-4, #item-2, #item-0, .index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto {
   text-align: center;
 }
 
@@ -32,7 +32,7 @@ body {
   background-color: white;
   color: #000000;
   width: 100%;
-  height: 100%;
+  height: 200px;
   font-family: "roboto";
   border-bottom: 2px solid;
 }
@@ -278,6 +278,10 @@ footer img {
   font-family: "roboto";
   /* TITULO DEL BODY */
 }
+.index #mainindex #vacciones {
+  background-color: cornsilk;
+  margin-bottom: 0px;
+}
 .index #mainindex .pruebaindex {
   height: 75vh;
   display: flex;
@@ -353,7 +357,7 @@ footer img {
   object-fit: cover;
   max-height: 100%;
   width: 100%;
-  height: 260px;
+  height: 315px;
 }
 
 @media (max-width: 768px) {
@@ -371,14 +375,14 @@ footer img {
 .divpadre {
   display: flex;
   gap: 20px;
-  background-color: bisque;
+  background-color: rgb(195, 195, 223);
   align-items: center;
   flex-direction: column;
 }
 
 .titulodecajasindex {
   display: flex;
-  background: rgb(255, 251, 251);
+  background: rgb(255, 255, 255);
   text-align: start;
   width: 100%;
   height: 350px;
@@ -395,7 +399,11 @@ footer img {
 }
 
 .divpadre2 {
-  background-color: #5759d1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(195, 195, 223);
+  align-items: stretch;
+  justify-content: center;
 }
 
 .divprueba1,
@@ -422,13 +430,18 @@ footer img {
 .cajapadre2 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   height: 50%;
   width: 100%;
-  background-image: url(../imagenes/capturadepantalla2023-08-01232136.png);
-  background-position: center;
-  background-size: cover;
+}
+.cajapadre2 .mujerpensando {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .cajapadre3 {
@@ -438,9 +451,7 @@ footer img {
   flex-direction: column;
   height: 50%;
   width: 100%;
-  background-image: url(../imagenes/capturadepantalla2023-08-01232045.png);
-  background-position: center;
-  background-size: cover;
+  align-items: stretch;
 }
 
 .imgbonificaciones {
@@ -460,165 +471,8 @@ footer img {
   height: 48px;
 }
 
-/* pages usuario */
-.bodyusuario .usuario {
-  background-color: rgb(0, 0, 0);
-}
-.bodyusuario .image-container {
-  min-height: 100%;
+.carouselflex {
   display: flex;
-  align-items: center;
-}
-.bodyusuario .img-fluid {
-  min-height: -webkit-fill-available;
-}
-
-.btn {
-  transition: background-color 0.3s, color 0.3s;
-  /* Transición suave para el cambio de colores */
-}
-
-/* Estilos cuando se presiona el botón */
-.btn:active,
-.btn:focus {
-  background-color: black;
-  color: white;
-}
-
-.usuarioform {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.mainventas {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-}
-.mainventas #item-0 {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  display: grid;
-  align-content: center;
-  gap: 20px;
-  grid-row-end: 2;
-  grid-column-end: 2;
-  align-items: center;
-  justify-content: center;
-}
-.mainventas #item-1 {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 3;
-}
-.mainventas #item-2 {
-  grid-row-start: 2;
-  grid-column-start: 1;
-  display: grid;
-  align-content: center;
-  gap: 20px;
-  grid-row-end: 3;
-  grid-column-end: 2;
-}
-.mainventas #item-3 {
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-column-end: 3;
-}
-.mainventas #item-4 {
-  display: grid;
-  align-content: center;
-  gap: 20px;
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 2;
-}
-.mainventas #item-5 {
-  grid-row-start: 3;
-  grid-column-start: 2;
-  background-color: white;
-  grid-row-end: 4;
-  grid-column-end: 3;
-}
-.mainventas .card {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  margin: 20px;
-  z-index: 1;
-  border-radius: 5%;
-}
-.mainventas .card .face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.mainventas .card .front {
-  transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000;
-}
-.mainventas .card .front img {
-  width: 100%;
-  height: 100%;
-}
-.mainventas .card .front h3 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.4);
-}
-.mainventas .card .back {
-  transform: perspective(600px) rotateY(180deg);
-  background: rgb(70, 67, 240);
-  padding: 15px;
-  color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 1px 1px 20px 10px rgb(255, 184, 184);
-}
-.mainventas .card .back .link {
-  border-top: solid 1px #f3f3f3;
-  height: 50px;
-  line-height: 50px;
-}
-.mainventas .card .back .link a {
-  color: #f3f3f3;
-}
-.mainventas .card .back h3 {
-  font-size: 30px;
-  margin-top: 20px;
-  letter-spacing: 2px;
-}
-.mainventas .card .back p {
-  letter-spacing: 1px;
-}
-.mainventas .card:hover .front {
-  transform: perspective(600px) rotateY(180deg);
-}
-.mainventas .card:hover .back {
-  transform: perspective(600px) rotateY(360deg);
-}
-.mainventas .animacionventas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-.mainventas .textocenter {
   justify-content: center;
   align-items: center;
 }
@@ -846,13 +700,7 @@ footer img {
 }
 
 /*ventas*/
-.mainventas {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-}
-.mainventas #item-0 {
+#item-0 {
   grid-row-start: 1;
   grid-column-start: 1;
   display: grid;
@@ -863,13 +711,17 @@ footer img {
   align-items: center;
   justify-content: center;
 }
-.mainventas #item-1 {
+
+#item-1 {
+  display: flex;
+  align-items: center;
   grid-row-start: 1;
   grid-column-start: 2;
   grid-row-end: 2;
   grid-column-end: 3;
 }
-.mainventas #item-2 {
+
+#item-2 {
   grid-row-start: 2;
   grid-column-start: 1;
   display: grid;
@@ -878,13 +730,15 @@ footer img {
   grid-row-end: 3;
   grid-column-end: 2;
 }
-.mainventas #item-3 {
+
+#item-3 {
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 3;
   grid-column-end: 3;
 }
-.mainventas #item-4 {
+
+#item-4 {
   display: grid;
   align-content: center;
   gap: 20px;
@@ -893,14 +747,16 @@ footer img {
   grid-row-end: 4;
   grid-column-end: 2;
 }
-.mainventas #item-5 {
+
+#item-5 {
   grid-row-start: 3;
   grid-column-start: 2;
   background-color: white;
   grid-row-end: 4;
   grid-column-end: 3;
 }
-.mainventas .card {
+
+.card {
   position: relative;
   width: 350px;
   height: 350px;
@@ -908,7 +764,8 @@ footer img {
   z-index: 1;
   border-radius: 5%;
 }
-.mainventas .card .face {
+
+.card .face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -917,15 +774,18 @@ footer img {
   overflow: hidden;
   transition: 0.5s;
 }
-.mainventas .card .front {
+
+.card .front {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
 }
-.mainventas .card .front img {
+
+.card .front img {
   width: 100%;
   height: 100%;
 }
-.mainventas .card .front h3 {
+
+.card .front h3 {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -934,7 +794,8 @@ footer img {
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
 }
-.mainventas .card .back {
+
+.card .back {
   transform: perspective(600px) rotateY(180deg);
   background: rgb(70, 67, 240);
   padding: 15px;
@@ -944,38 +805,97 @@ footer img {
   justify-content: space-between;
   box-shadow: 1px 1px 20px 10px rgb(255, 184, 184);
 }
-.mainventas .card .back .link {
+
+.card .back .link {
   border-top: solid 1px #f3f3f3;
   height: 50px;
   line-height: 50px;
 }
-.mainventas .card .back .link a {
+
+.card .back .link a {
   color: #f3f3f3;
 }
-.mainventas .card .back h3 {
+
+.card .back h3 {
   font-size: 30px;
   margin-top: 20px;
   letter-spacing: 2px;
 }
-.mainventas .card .back p {
+
+.card .back p {
   letter-spacing: 1px;
 }
-.mainventas .card:hover .front {
+
+.card:hover .front {
   transform: perspective(600px) rotateY(180deg);
 }
-.mainventas .card:hover .back {
+
+.card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
-.mainventas .animacionventas {
+
+.animacionventas {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
-.mainventas .textocenter {
+
+.textocenter {
   justify-content: center;
   align-items: center;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 80px;
+}
+
+.mainventas {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+.mainventas .sectionventas {
+  display: flex;
+  flex-direction: column;
+}
+.mainventas .sectionventas .artventas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.mainventas .sectionventas .artventas .mejoresofertas {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainventas .sectionventas .artventas .cajaventas {
+  background-color: aqua;
+  height: 350px;
+  height: 500px;
+}
+.mainventas .sectionventas .artventas .cajaventas .textoinformacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.mainventas .sectionventas .artventas .cajaventas .imgventas {
+  height: 35%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*blog*/

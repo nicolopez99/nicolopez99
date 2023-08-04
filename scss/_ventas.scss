@@ -1,176 +1,224 @@
-.mainventas {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+#item-0 {
 
+  grid-row-start: 1;
+  grid-column-start: 1;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  grid-row-end: 2;
+  grid-column-end: 2;
+  align-items: center;
+  justify-content: center;
+  @extend %texto;
+}
+
+
+#item-1 {
+  display: flex;
+  align-items: center;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+
+}
+
+#item-2 {
+
+  grid-row-start: 2;
+  grid-column-start: 1;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  @extend %texto;
+
+}
+
+#item-3 {
+
+
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+
+}
+
+#item-4 {
+
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2;
+  @extend %texto;
+
+
+
+}
+
+#item-5 {
+
+
+  grid-row-start: 3;
+  grid-column-start: 2;
+  background-color: white;
+  grid-row-end: 4;
+  grid-column-end: 3;
+
+
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  z-index: 1;
+  border-radius: 5%;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+
+  width: 100%;
   height: 100%;
 
-  #item-0 {
+}
 
-    grid-row-start: 1;
-    grid-column-start: 1;
-    display: grid;
-    align-content: center;
-    gap: 20px;
-    grid-row-end: 2;
-    grid-column-end: 2;
-    align-items: center;
-    justify-content: center;
-    @extend %texto;
-  }
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  @extend %texto;
+}
 
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(70, 67, 240);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @extend %texto;
+  box-shadow: 1px 1px 20px 10px rgb(255 184 184);
+}
 
-  #item-1 {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-row-end: 2;
-    grid-column-end: 3;
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
 
-  }
+.card .back .link a {
+  color: #f3f3f3;
+}
 
-  #item-2 {
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
 
-    grid-row-start: 2;
-    grid-column-start: 1;
-    display: grid;
-    align-content: center;
-    gap: 20px;
-    grid-row-end: 3;
-    grid-column-end: 2;
-    @extend %texto;
+.card .back p {
+  letter-spacing: 1px;
+}
 
-  }
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
 
-  #item-3 {
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
 
+.animacionventas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 3;
-    grid-column-end: 3;
+.textocenter {
+  justify-content: center;
+  align-items: center;
 
-  }
+}
 
-  #item-4 {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 80px;
+}
 
-    display: grid;
-    align-content: center;
-    gap: 20px;
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-row-end: 4;
-    grid-column-end: 2;
-    @extend %texto;
+.mainventas {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
 
-
-
-  }
-
-  #item-5 {
-
-
-    grid-row-start: 3;
-    grid-column-start: 2;
-    background-color: white;
-    grid-row-end: 4;
-    grid-column-end: 3;
-
-
-  }
-
-  .card {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    margin: 20px;
-    z-index: 1;
-    border-radius: 5%;
-  }
-
-  .card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
-  }
-
-  .card .front {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
-  }
-
-  .card .front img {
-
-    width: 100%;
-    height: 100%;
-
-  }
-
-  .card .front h3 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
-    @extend %texto;
-  }
-
-  .card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(70, 67, 240);
-    padding: 15px;
-    color: #f3f3f3;
+  .sectionventas {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    @extend %texto;
-    box-shadow: 1px 1px 20px 10px rgb(255 184 184);
-  }
 
-  .card .back .link {
-    border-top: solid 1px #f3f3f3;
-    height: 50px;
-    line-height: 50px;
-  }
-
-  .card .back .link a {
-    color: #f3f3f3;
-  }
-
-  .card .back h3 {
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-  }
-
-  .card .back p {
-    letter-spacing: 1px;
-  }
-
-  .card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-  }
-
-  .card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-  }
-
-  .animacionventas {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    .artventas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .mejoresofertas{
+        display: flex;
+    align-items: stretch;
     justify-content: center;
-    min-height: 100vh;
-  }
-
-  .textocenter {
+    flex-direction: column;
+      }
+      .cajaventas{
+        background-color: aqua;
+        height: 350px;
+        height: 500px;
+        .textoinformacion{
+          display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 50px;
+  }
+  .imgventas {
+          height: 35%;
+          width: 100%;
+          object-fit: cover;
+      }
+      }
+      
+    }
   }
 }
