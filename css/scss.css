@@ -4,7 +4,7 @@
   background-color: rgb(255, 255, 255);
 }
 
-.card .back, .card .front h3, #item-4, #item-2, #item-0, .index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto {
+.index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto {
   text-align: center;
 }
 
@@ -238,9 +238,10 @@ body {
 }
 #indexfooter .logoderedes {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-direction: row-reverse;
   margin-left: 5px;
 }
 #indexfooter #indexderechos {
@@ -261,6 +262,10 @@ footer img {
 }
 
 /* variableeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+h1, h3 {
+  text-align: center;
+}
+
 /*img de ventas*/
 .imgventas {
   width: 250px;
@@ -279,14 +284,14 @@ footer img {
   /* TITULO DEL BODY */
 }
 .index #mainindex #vacciones {
-  background-color: cornsilk;
+  background-color: #f5f5f5;
   margin-bottom: 0px;
 }
 .index #mainindex .pruebaindex {
   height: 75vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .index #mainindex .pruebaindex .banerindex {
   height: 100%;
@@ -304,16 +309,15 @@ footer img {
 }
 .index #mainindex h2 {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .index #mainindex .flexindex {
   margin-top: 10px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: center;
-}
-.index #mainindex .textoindex {
-  justify-content: center;
 }
 .index #mainindex #ofertass {
   margin-top: 10px;
@@ -324,6 +328,7 @@ footer img {
 }
 .index #mainindex .btn {
   background-color: #4300d2;
+  color: white;
 }
 
 .mujer {
@@ -337,14 +342,14 @@ footer img {
 
 .linkmujer {
   display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100px;
   color: #181818;
   padding: 10px;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
   border: solid 0.7px #ccc;
@@ -360,34 +365,40 @@ footer img {
   height: 315px;
 }
 
-@media (max-width: 768px) {
-  .mujer img {
-    max-width: 100%;
-  }
+.linktexto {
+  color: white;
+  text-decoration: none;
 }
+
 .section2index {
   margin-top: 10px;
   margin-bottom: 25px;
-  background-color: #76dcb5;
+  background-color: #f5f5f5;
   gap: 80px;
 }
 
 .divpadre {
   display: flex;
-  gap: 20px;
-  background-color: rgb(195, 195, 223);
   align-items: center;
+  justify-content: center;
+  gap: 20px;
   flex-direction: column;
 }
 
 .titulodecajasindex {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgb(255, 255, 255);
   text-align: start;
   width: 100%;
   height: 350px;
   font-size: 35px;
-  align-items: center;
+  border-radius: 20px;
+}
+.titulodecajasindex .textodivpadre {
+  text-align: start;
+  margin-left: 10px;
 }
 
 .cajasindex2 {
@@ -400,10 +411,9 @@ footer img {
 
 .divpadre2 {
   display: flex;
-  flex-direction: column;
-  background-color: rgb(195, 195, 223);
   align-items: stretch;
   justify-content: center;
+  flex-direction: column;
 }
 
 .divprueba1,
@@ -414,17 +424,18 @@ footer img {
   height: 154px;
   width: 220px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  align-items: flex-start;
+  flex-direction: column;
   border: 1px solid #ccc;
 }
 
 .botonvermas {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin-left: 145px;
   width: 100%;
-  justify-content: flex-start;
 }
 
 .cajapadre2 {
@@ -446,12 +457,11 @@ footer img {
 
 .cajapadre3 {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column;
   height: 50%;
   width: 100%;
-  align-items: stretch;
 }
 
 .imgbonificaciones {
@@ -469,18 +479,19 @@ footer img {
   border-radius: 24px;
   padding: 0 20px;
   height: 48px;
+  color: white;
 }
 
-.carouselflex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.indexvermas:hover {
+  background-color: blueviolet;
+  box-shadow: #181818;
+  cursor: pointer;
 }
 
 /*usuario*/
 /* pages usuario */
 .bodyusuario .usuario {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(225, 225, 225);
 }
 .bodyusuario .image-container {
   min-height: 100%;
@@ -492,15 +503,12 @@ footer img {
 }
 
 .btn {
+  background-color: rgb(65, 165, 247);
   transition: background-color 0.3s, color 0.3s;
-  /* Transición suave para el cambio de colores */
 }
 
-/* Estilos cuando se presiona el botón */
-.btn:active,
-.btn:focus {
-  background-color: black;
-  color: white;
+.btn:hover {
+  background-color: blueviolet;
 }
 
 .usuarioform {
@@ -510,88 +518,32 @@ footer img {
 }
 
 /*quienes somos*/
-/* page quines somos */
-/* main 
-.quienessomosgrid {
-  display: grid;
-  background: rgb(17, 231, 221);
-  background: linear-gradient(45deg, rgba(17, 231, 221, 1) 19%, rgba(47, 221, 162, 1) 60%, rgba(4, 173, 236, 1) 100%);
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  @extend %texto;
-
-  .estamos_para_ayudarte {
-
-    grid-row-start: 1;
-    grid-column-start: 1;
-    background: rgb(58, 180, 178);
-    background: linear-gradient(90deg, rgba(58, 180, 178, 1) 100%, rgba(29, 175, 253, 1) 100%);
-    grid-row-end: 4;
-    grid-column-end: 3;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    @extend %texto;
-  }
-
-  #mapa {
-    display: grid;
-    justify-items: center;
-
-    .mapa {
-      display: grid;
-      justify-content: center;
-      object-fit: cover;
-      grid-column: 2/-1;
-      width: auto;
-      height: auto;
-      border: 1px solid #f1c40f;
-      border: 1px solid #f1c40f;
-      justify-items: center;
-    }
-  }
-
-  /* section 2 
-  .errores {
-    background: rgb(58, 180, 178);
-    background: linear-gradient(90deg, rgba(58, 180, 178, 1) 0%, rgba(29, 175, 253, 1) 30%, rgba(252, 69, 69, 1) 100%);
-    grid-row-start: 1;
-    grid-column-start: 3;
-
-    grid-row-end: 4;
-    grid-column-end: 5;
-  }
-}
-
-/* aside 
-.asidequienes {
-  color: #000;
-  font-size: 25px;
-  background: rgb(58, 180, 178);
-  background: linear-gradient(90deg, rgba(58, 180, 178, 1) 0%, rgba(29, 175, 253, 1) 30%, rgba(252, 69, 69, 1) 100%);
-  grid-row-start: 4;
-  grid-column-start: 1;
-
-  grid-row-end: 5;
-  grid-column-end: 5;
-  text-align: center;
-}*/
 /*page ayuda*/
 .quienessomosdiv {
-  display: flex;
   height: 25vh;
   background-color: rgb(183, 201, 201);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
-  flex-direction: column;
   gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.quienessomosdiv .h1ayuda {
+  color: white;
 }
 .quienessomosdiv .barradebusqueda {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.quienessomosdiv .barradebusqueda .inputayuda {
+  border: solid 1px;
+  color: gray;
+  border-radius: 10px;
+  height: 30px;
 }
 
 .sectionquienes {
@@ -610,17 +562,17 @@ footer img {
 
 .iconos {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: 10px;
   height: 300px;
 }
 
 .cajasiconos {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #FFFFFF;
   width: 25%;
   height: 200px;
@@ -636,10 +588,9 @@ footer img {
 
 .subtitulo2 {
   display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .quienessomosayuda {
@@ -664,31 +615,38 @@ footer img {
   gap: 4%;
 }
 
-.holaa {
+.masbusquedas {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
   width: 48%;
   height: 80px;
   border: 1px solid var(--color-neutral-300);
   border-radius: 2%;
-  align-items: center;
-  justify-content: space-between;
   border: 1px solid gray;
+  border-radius: 20px;
 }
 
 .correo {
   height: 300px;
   background-color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 .correo .correoflex {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.correo .correoflex .inputayuda2 {
+  border: solid 1px;
+  color: gray;
+  border-radius: 10px;
+  height: 40px;
 }
 .correo .correoflex .imgcorreo {
   height: 85px;
@@ -697,10 +655,12 @@ footer img {
 .divflexayuda {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /*ventas*/
-#item-0 {
+/*#item-0 {
+
   grid-row-start: 1;
   grid-column-start: 1;
   display: grid;
@@ -710,7 +670,9 @@ footer img {
   grid-column-end: 2;
   align-items: center;
   justify-content: center;
+  @extend %texto;
 }
+
 
 #item-1 {
   display: flex;
@@ -719,9 +681,11 @@ footer img {
   grid-column-start: 2;
   grid-row-end: 2;
   grid-column-end: 3;
+
 }
 
 #item-2 {
+
   grid-row-start: 2;
   grid-column-start: 1;
   display: grid;
@@ -729,16 +693,22 @@ footer img {
   gap: 20px;
   grid-row-end: 3;
   grid-column-end: 2;
+  @extend %texto;
+
 }
 
 #item-3 {
+
+
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 3;
   grid-column-end: 3;
+
 }
 
 #item-4 {
+
   display: grid;
   align-content: center;
   gap: 20px;
@@ -746,21 +716,29 @@ footer img {
   grid-column-start: 1;
   grid-row-end: 4;
   grid-column-end: 2;
+  @extend %texto;
+
+
+
 }
 
 #item-5 {
+
+
   grid-row-start: 3;
   grid-column-start: 2;
   background-color: white;
   grid-row-end: 4;
   grid-column-end: 3;
+
+
 }
 
 .card {
   position: relative;
   width: 350px;
   height: 350px;
-  margin: 20px;
+
   z-index: 1;
   border-radius: 5%;
 }
@@ -772,7 +750,7 @@ footer img {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .card .front {
@@ -781,8 +759,10 @@ footer img {
 }
 
 .card .front img {
+
   width: 100%;
   height: 100%;
+
 }
 
 .card .front h3 {
@@ -792,7 +772,8 @@ footer img {
   height: 45px;
   line-height: 45px;
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, .4);
+  @extend %texto;
 }
 
 .card .back {
@@ -803,7 +784,8 @@ footer img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 1px 1px 20px 10px rgb(255, 184, 184);
+  @extend %texto;
+  box-shadow: 1px 1px 20px 10px rgb(255 184 184);
 }
 
 .card .back .link {
@@ -845,6 +827,7 @@ footer img {
 .textocenter {
   justify-content: center;
   align-items: center;
+
 }
 
 .carousel-control-next-icon,
@@ -854,24 +837,27 @@ footer img {
   height: 50px;
   border-radius: 80px;
 }
-
+*/
 .mainventas {
   display: flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   row-gap: 10px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(239deg, rgb(255, 255, 255) 0%, rgb(248, 255, 213) 50%, rgb(255, 255, 255) 100%);
 }
 .mainventas .sectionventas {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 .mainventas .sectionventas .artventas {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .mainventas .sectionventas .artventas .mejoresofertas {
@@ -880,22 +866,91 @@ footer img {
   justify-content: center;
   flex-direction: column;
 }
+.mainventas .sectionventas .artventas .mejoresofertas .destino {
+  width: 300px;
+  height: 200px;
+}
+.mainventas .sectionventas .artventas .mejoresofertas .dias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: solid 1px gray;
+  text-align: center;
+  height: 50px;
+}
+.mainventas .sectionventas .artventas .mejoresofertas .parrafoventas {
+  margin-bottom: 0px;
+}
+.mainventas .sectionventas .artventas .mejoresofertas .comprar {
+  border: white;
+  background: rgb(201, 97, 244);
+  background: linear-gradient(180deg, rgb(201, 97, 244) 38%, rgb(138, 29, 250) 69%);
+}
+.mainventas .sectionventas .artventas .mejoresofertas .comprar:hover {
+  background: rgb(177, 41, 219);
+  background: linear-gradient(4deg, rgb(177, 41, 219) 0%, rgb(109, 93, 127) 100%);
+}
+.mainventas .sectionventas .artventas .mejoresofertas #promocion1 {
+  background: rgb(195, 34, 34);
+  background: linear-gradient(0deg, rgb(195, 34, 34) 0%, rgb(253, 193, 45) 94%);
+}
+.mainventas .sectionventas .artventas .mejoresofertas #promocion1:hover {
+  background: rgb(195, 34, 34);
+  background: linear-gradient(4deg, rgb(195, 34, 34) 0%, rgb(253, 193, 45) 94%);
+}
+.mainventas .sectionventas .artventas .mejoresofertas .transporte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+}
+.mainventas .sectionventas .artventas .mejoresofertas .precio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-top: solid 1px gray;
+  width: 100%;
+  height: 100px;
+}
+.mainventas .sectionventas .artventas .mejoresofertas .puntos {
+  width: 100%;
+  border-top: solid 1px gray;
+  text-align: center;
+}
 .mainventas .sectionventas .artventas .cajaventas {
-  background-color: aqua;
-  height: 350px;
-  height: 500px;
+  background-color: white;
 }
 .mainventas .sectionventas .artventas .cajaventas .textoinformacion {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 50px;
+  justify-content: center;
+  flex-direction: column;
 }
 .mainventas .sectionventas .artventas .cajaventas .imgventas {
-  height: 35%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.ofertastiempolimite {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(110, 0, 181);
+  background: linear-gradient(90deg, rgb(110, 0, 181) 0%, rgb(209, 64, 73) 100%);
+  border: solid 1px white;
+  text-align: center;
+}
+.ofertastiempolimite .promocion2 {
+  color: rgb(243, 243, 243);
+  margin-right: 20px;
 }
 
 /*blog*/
@@ -945,20 +1000,41 @@ footer img {
 @media (max-width: 768px) {
   .mainindex {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: auto;
     height: auto;
   }
+  .col-6 {
+    width: 100%;
+  }
   #vacciones {
-    justify-content: center;
     text-align: center;
   }
   .flexindex {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
+  }
+  .divpadre {
+    width: 100%;
+  }
+  .divpadre .botonvermas {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .divpadre2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .mujer img {
+    max-width: 100%;
   }
 }
 /* mediaqueris de page ayuda */
@@ -968,18 +1044,18 @@ footer img {
   }
   .iconos {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 400px;
-    align-items: center;
-    justify-content: center;
   }
   .cajasiconos {
     display: flex;
-    flex-direction: row;
-    width: 100%;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
     gap: 0px;
     margin: 0px;
     height: 200px;
@@ -992,18 +1068,20 @@ footer img {
   }
   .subcategorias1 {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 4%;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
   }
   .sectionquienes {
     background-color: rgb(195, 195, 223);
     height: auto;
   }
-  .holaa {
+  .masbusquedas {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     width: 100%;
     height: 80px;
@@ -1011,7 +1089,6 @@ footer img {
     border-radius: 2%;
     border: 1px solid gray;
     flex-direction: row;
-    align-items: center;
   }
   .imgbonificaciones {
     margin-left: 0px;

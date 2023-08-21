@@ -1,89 +1,29 @@
-/* page quines somos */
-
-/* main 
-.quienessomosgrid {
-  display: grid;
-  background: rgb(17, 231, 221);
-  background: linear-gradient(45deg, rgba(17, 231, 221, 1) 19%, rgba(47, 221, 162, 1) 60%, rgba(4, 173, 236, 1) 100%);
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  @extend %texto;
-
-  .estamos_para_ayudarte {
-
-    grid-row-start: 1;
-    grid-column-start: 1;
-    background: rgb(58, 180, 178);
-    background: linear-gradient(90deg, rgba(58, 180, 178, 1) 100%, rgba(29, 175, 253, 1) 100%);
-    grid-row-end: 4;
-    grid-column-end: 3;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    @extend %texto;
-  }
-
-  #mapa {
-    display: grid;
-    justify-items: center;
-
-    .mapa {
-      display: grid;
-      justify-content: center;
-      object-fit: cover;
-      grid-column: 2/-1;
-      width: auto;
-      height: auto;
-      border: 1px solid #f1c40f;
-      border: 1px solid #f1c40f;
-      justify-items: center;
-    }
-  }
-
-  /* section 2 
-  .errores {
-    background: rgb(58, 180, 178);
-    background: linear-gradient(90deg, rgba(58, 180, 178, 1) 0%, rgba(29, 175, 253, 1) 30%, rgba(252, 69, 69, 1) 100%);
-    grid-row-start: 1;
-    grid-column-start: 3;
-
-    grid-row-end: 4;
-    grid-column-end: 5;
-  }
-}
-
-/* aside 
-.asidequienes {
-  color: #000;
-  font-size: 25px;
-  background: rgb(58, 180, 178);
-  background: linear-gradient(90deg, rgba(58, 180, 178, 1) 0%, rgba(29, 175, 253, 1) 30%, rgba(252, 69, 69, 1) 100%);
-  grid-row-start: 4;
-  grid-column-start: 1;
-
-  grid-row-end: 5;
-  grid-column-end: 5;
-  text-align: center;
-}*/
 
 /*page ayuda*/
 
 
 .quienessomosdiv {
-  display: flex;
   height: 25vh;
   background-color: rgb(183, 201, 201);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
-  flex-direction: column;
   gap: 20px;
+  @include flex(flex,center,center);
+  @include texto(center);
+  @include flexdi(column);
+  .h1ayuda{
+    color: white;
+  }
 
   .barradebusqueda {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .inputayuda{
+      border: solid 1px; color: gray;
+      border-radius: 10px;
+      height: 30px;
+    }
 
   }
 }
@@ -94,27 +34,21 @@
 }
 
 .subtitulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  @include flex(flex,center,center);
+  @include texto(center);
   height: 50px;
   margin-top: 10px;
 }
 
 .iconos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@include flex( flex,center,center);
   margin-top: 10px;
   height: 300px;
 }
 
 .cajasiconos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex,center,center);
+  @include flexdi(column);
   background-color: #FFFFFF;
   width: 25%;
   height: 200px;
@@ -125,7 +59,7 @@
   border: 1px solid gray;
 
   .textcenter {
-    text-align: center;
+  @include texto(center);
 
   }
 
@@ -133,11 +67,8 @@
 
 .subtitulo2 {
 
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex,center,center);
+  @include flexdi(column);
 }
 
 .quienessomosayuda {
@@ -148,7 +79,7 @@
   background-color: rgb(195, 195, 223);
 
   display: flex;
-  flex-direction: column;
+  @include flexdi(column);
   gap: 25px;
 
 }
@@ -158,41 +89,39 @@
 }
 
 .subcategorias1 {
+  @include flex(flex,center,flex-start);
 
-  display: flex;
 
-  align-items: center;
-  justify-content: flex-start;
   gap: 4%;
 
 }
 
-.holaa {
-  display: flex;
+.masbusquedas {
+  @include flex(flex,center,space-between);
   background-color: white;
   width: 48%;
   height: 80px;
   border: 1px solid var(--color-neutral-300);
   border-radius: 2%;
-  align-items: center;
-  justify-content: space-between;
   border: 1px solid gray;
+  border-radius: 20px;
 }
 
 .correo {
   height: 300px;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  @include flex(flex,center,center);
+  @include flexdi(row);
 
   .correoflex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    @include flex(flex,center,center);
+    @include flexdi(column);
+    .inputayuda2{
+      border: solid 1px;
+      color: gray;
+      border-radius: 10px;
+      height: 40px;
+    }
     .imgcorreo {
       height: 85px;
 
@@ -201,7 +130,7 @@
 }
 
 .divflexayuda {
-  display: flex;
-  align-items: center;
+  @include flex(flex,center,center);
+
 
 }

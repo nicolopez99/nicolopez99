@@ -226,8 +226,8 @@
   padding: 10px;
   display: grid;
   .indexderechos {
-  flex-direction: row;
-  justify-content: center;
+    @include flexdi(row);
+    justify-content: center;
   color: #babdc5;
 }
 #redessocialestexto {
@@ -235,10 +235,9 @@
   color: #babdc5;   
 }
 .logoderedes {
-  display: flex;
+  @include flex(flex,center,center);
   flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+  @include flexdi(row-reverse);
   margin-left: 5px;
 
 
@@ -254,7 +253,7 @@ footer img
 {
   width: 40px;
   display: flex;
-  flex-direction: column-reverse;
+  @include flexdi(column-reverse);
 }
 .logoderedes a {
   margin-left: 1%;
@@ -264,7 +263,9 @@ footer img
 /* variableeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 
-
+h1 , h3{
+  text-align: center;
+}
 
 
 
@@ -276,3 +277,4 @@ footer img
   height: 250px;
   justify-content: center;
 }
+

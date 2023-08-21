@@ -1,9 +1,13 @@
-@mixin flex($display, $ejey, $ejeX){
+@mixin flex($display, $ejeY, $ejeX)
+{
     display: $display;
-    justify-content: $ejeX;
-    align-items: $ejey;
+    align-items: $ejeY;
+    justify-content: $ejeX;    
 }
-@mixin texto($vertical){
-    text-align: $vertical;
 
+@mixin texto($vertical){
+    text-align: $vertical;}
+@mixin flexdi($flex-direcion,){
+    flex-direction: $flex-direcion;
 }
+

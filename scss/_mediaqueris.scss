@@ -2,23 +2,40 @@
 
 @media (max-width: 768px) {
   .mainindex {
-    display: flex;
+    @include flex(flex,center,center);
     flex-direction: column;
-    justify-content: center;
+
     width: auto;
     height: auto;
   }
+  .col-6{
+    width: 100%;
+  }
 
   #vacciones {
-    justify-content: center;
-    text-align: center;
+    @include texto(center);
   }
 
   .flexindex {
-    display: flex;
+    @include flex(flex,center,center);
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    @include texto(center);
+  }
+  .divpadre{
+    width: 100%;
+    .botonvermas{
+      margin-left: 0px;
+      @include flex(flex,center,center);
+
+    }
+  }
+  .divpadre2{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .mujer img {
+    max-width: 100%;
   }
 }
 
@@ -31,21 +48,18 @@
   }
 
   .iconos {
-    display: flex;
+    @include flex(flex,center,center);
     flex-direction: column;
     width: 100%;
     height: 400px;
-    align-items: center;
-    justify-content: center;
+
 
   }
 
   .cajasiconos {
-    display: flex;
+    @include flex(flex,center,flex-start);
     flex-direction: row;
     width: 100%;
-    align-items: center;
-    justify-content: flex-start;
     gap: 0px;
     margin: 0px;
     height: 200px;
@@ -56,18 +70,15 @@
   .sectionquienes2 {
     background-color: rgb(195, 195, 223);
     display: flex;
-    flex-direction: column;
+    @include flexdi(column);
     gap: 0px;
   }
 
 
   .subcategorias1 {
-    display: flex;
-    gap: 4%;
-    flex-direction: column;
+    @include flex(flex,center,center);    gap: 4%;
+    @include flexdi(column);
     width: 100%;
-    justify-content: center;
-    align-items: center;
   }
 
   .sectionquienes {
@@ -77,8 +88,8 @@
   }
 
 
-  .holaa {
-    display: flex;
+  .masbusquedas {
+    @include flex(flex,center,center);
     background-color: white;
     width: 100%;
     height: 80px;
@@ -86,9 +97,8 @@
     border-radius: 2%;
 
     border: 1px solid gray;
-    flex-direction: row;
+    @include flexdi(row);
 
-    align-items: center;
 
   }
 
@@ -103,7 +113,7 @@
 
   .textcenter {
     margin-left: 10px;
-    text-align: center;
+    @include texto(center);
   }
 }
 
@@ -127,7 +137,7 @@
 
     width: 100%;
     height: 100%;
-    text-align: unset;
+    @include texto(unset);
   }
 }
 
