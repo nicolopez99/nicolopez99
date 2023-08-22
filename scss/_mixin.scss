@@ -10,4 +10,6 @@
 @mixin flexdi($flex-direcion,){
     flex-direction: $flex-direcion;
 }
-
+@mixin flew($flex-warp){
+    flex-wrap: $flex-warp;
+}
