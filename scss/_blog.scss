@@ -6,32 +6,38 @@
    padding: 10px;
    @extend %color;
 
-.infodeblog{
- 
-  background-color: rgb(219, 219, 219);
-  @include flex(flex , center, space-around);
+   .infodeblog {
 
-}
-.nav_item2 {
-  margin-bottom: 5px;
-  list-style: none;
-  .minititulo{
-    text-decoration: none;
-    color: black;
-  }
-  .minimenu{
-    text-decoration: none;
-    color: gray;
-   
+     background-color: rgb(219, 219, 219);
+     @include flex(flex, center, space-around);
 
-  }
-  .minimenu:hover{
-      color: white ;
-    }
+   }
 
-}
+   .nav_item2 {
+     margin-bottom: 5px;
+     list-style: none;
 
- }.ingresatucorreo{
-  @include flex(flex,center,center);
+     .minititulo {
+       text-decoration: none;
+       color: black;
+     }
 
-}
+     .minimenu {
+       text-decoration: none;
+       color: gray;
+
+
+     }
+
+     .minimenu:hover {
+       color: white;
+     }
+
+   }
+
+ }
+
+ .ingresatucorreo {
+   @include flex(flex, center, center);
+
+ }

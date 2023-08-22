@@ -7,14 +7,15 @@
     font-family: "roboto";
     @extend %texto;
 
-    #vacciones{
+    #vacciones {
       background-color: #f5f5f5;
       margin-bottom: 0px;
     }
+
     /* TITULO DEL BODY */
     .pruebaindex {
       height: 75vh;
-      @include flex(flex,center,center);
+      @include flex(flex, center, center);
 
 
       .banerindex {
@@ -38,12 +39,12 @@
     }
 
     h2 {
-      @include flex(flex,center,center);
+      @include flex(flex, center, center);
     }
 
     .flexindex {
       margin-top: 10px;
-      @include flex(flex,center,center);
+      @include flex(flex, center, center);
       @include flexdi(column);
       @extend %texto;
     }
@@ -65,7 +66,8 @@
       background-color: #4300d2;
       color: white;
     }
-    .btn:hover{
+
+    .btn:hover {
       background-color: blueviolet;
     }
   }
@@ -83,7 +85,7 @@
 }
 
 .linkmujer {
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   bottom: 0;
   left: 0;
   width: 100%;
@@ -107,10 +109,11 @@
   height: 315px;
 
 }
-  .linktexto{
-    color: white;
-    text-decoration: none;
-  }
+
+.linktexto {
+  color: white;
+  text-decoration: none;
+}
 
 
 
@@ -125,7 +128,7 @@
 }
 
 .divpadre {
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   gap: 20px;
 
   @include flexdi(column);
@@ -134,7 +137,7 @@
 
 .titulodecajasindex {
 
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   background: rgb(255, 255, 255);
   @include texto(start);
   width: 100%;
@@ -142,19 +145,20 @@
   font-size: 35px;
   border-radius: 20px;
 
-  .textodivpadre{
+  .textodivpadre {
     @include texto(start);
     margin-left: 10px;
     font-size: larger;
-   
+
   }
- .txtred{
-      color: red
-    }
+
+  .txtred {
+    color: red
+  }
 }
 
 .cajasindex2 {
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   flex-wrap: wrap;
   gap: 20px;
 
@@ -162,9 +166,9 @@
 }
 
 .divpadre2 {
-  @include flex(flex,stretch,center);
+  @include flex(flex, stretch, center);
   @include flexdi(column);
-  
+
 
 
 }
@@ -176,36 +180,37 @@
   border-radius: 8px;
   height: 154px;
   width: 220px;
-  @include flex(flex,center,space-around);
+  @include flex(flex, center, space-around);
   @include flexdi(column);
   border: 1px solid #ccc;
 }
 
 .botonvermas {
-  @include flex(flex,center,flex-start);
+  @include flex(flex, center, flex-start);
   margin-left: 145px;
   width: 100%;
 }
 
 .cajapadre2 {
-  @include flex(flex,center,flex-end);
+  @include flex(flex, center, flex-end);
   @include flexdi(column);
   height: 50%;
   width: 100%;
-  .mujerpensando{
+
+  .mujerpensando {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     max-height: 100%;
     width: 100%;
     border-radius: 10px;
-    
+
   }
 }
 
 .cajapadre3 {
 
-  @include flex(flex,stretch,center);
+  @include flex(flex, stretch, center);
   @include flexdi(column);
   height: 50%;
   width: 100%;
@@ -231,7 +236,7 @@
   color: white;
 }
 
-.indexvermas:hover{
+.indexvermas:hover {
   background-color: blueviolet;
   box-shadow: #181818;
   cursor: pointer;

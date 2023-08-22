@@ -2,13 +2,14 @@
 
 @media (max-width: 768px) {
   .mainindex {
-    @include flex(flex,center,center);
+    @include flex(flex, center, center);
     @include flexdi(column);
 
     width: auto;
     height: auto;
   }
-  .col-6{
+
+  .col-6 {
     width: 100%;
   }
 
@@ -17,22 +18,26 @@
   }
 
   .flexindex {
-    @include flex(flex,center,center);
+    @include flex(flex, center, center);
     @include flexdi(column);
     @include texto(center);
   }
-  .divpadre{
+
+  .divpadre {
     width: 100%;
-    .botonvermas{
+
+    .botonvermas {
       margin-left: 0px;
-      @include flex(flex,center,center);
+      @include flex(flex, center, center);
 
     }
   }
-  .divpadre2{
+
+  .divpadre2 {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .mujer img {
     max-width: 100%;
@@ -48,7 +53,7 @@
   }
 
   .iconos {
-    @include flex(flex,center,center);
+    @include flex(flex, center, center);
     @include flexdi(column);
     width: 100%;
     height: 400px;
@@ -57,7 +62,7 @@
   }
 
   .cajasiconos {
-    @include flex(flex,center,center);
+    @include flex(flex, center, center);
     @include flexdi(row);
     width: 100%;
     gap: 0px;
@@ -76,7 +81,8 @@
 
 
   .subcategorias1 {
-    @include flex(flex,center,center);    gap: 4%;
+    @include flex(flex, center, center);
+    gap: 4%;
     @include flexdi(column);
     width: 100%;
   }
@@ -89,7 +95,7 @@
 
 
   .masbusquedas {
-    @include flex(flex,center,space-between);
+    @include flex(flex, center, space-between);
     background-color: white;
     width: 100%;
     height: 80px;
@@ -116,13 +122,14 @@
     @include texto(center);
   }
 }
+
 /*media queris de blog*/
-@media (max-width: 768px){
-  .ingresatucorreo{
-    @include flex(flex,center,center);
+@media (max-width: 768px) {
+  .ingresatucorreo {
+    @include flex(flex, center, center);
     gap: 1px;
     flex-direction: column;
-}
+  }
 
 }
 

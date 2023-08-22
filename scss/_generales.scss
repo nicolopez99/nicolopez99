@@ -1,15 +1,18 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  @font-face {
-    font-family: "roboto";
-    src: url(../roboto/Roboto-Regular.ttf);
-  }
-  body {
-    font-family: "roboto";
-  }
- /* HEADER de index general*/
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../roboto/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: "roboto";
+}
+
+/* HEADER de index general*/
 .hero {
   background-color: white;
   color: #000000;
@@ -18,6 +21,7 @@
   font-family: "roboto";
   border-bottom: 2px solid
 }
+
 .hero {
   color: fff;
 }
@@ -183,87 +187,94 @@
     letter-spacing: none;
   }
 }
-      
- /* MEDIAQUERIS MENU HAMBURGUESA */
- @media (min-width: 768px) {
-    .ocultar {
-      display: none;
-      gap: 1.5em;
-      letter-spacing: 2px;
-    }
-  
-    .nav {
-      --state-hamburguer: scale(0);
-      --state-menu: translate(0);
-    }
-  
-    .nav:target {
-      --state-close: scale(0);
-    }
-  
-    .nav__links {
-      padding: 0;
-      background-color: unset;
-      position: unset;
-      gap: 1.5em;
-      grid-auto-flow: column;
-      font-family: "roboto";
-      transform: unset;
-      grid-column: -2/-1;
-      grid-row: 1/2;
-    }
-  
-    .nav__link {
-      font-size: 1rem;
-      letter-spacing: none;
-    }
+
+/* MEDIAQUERIS MENU HAMBURGUESA */
+@media (min-width: 768px) {
+  .ocultar {
+    display: none;
+    gap: 1.5em;
+    letter-spacing: 2px;
   }
-   /* imagenes generales */
- 
-  /* FOOTER GENERAL */
+
+  .nav {
+    --state-hamburguer: scale(0);
+    --state-menu: translate(0);
+  }
+
+  .nav:target {
+    --state-close: scale(0);
+  }
+
+  .nav__links {
+    padding: 0;
+    background-color: unset;
+    position: unset;
+    gap: 1.5em;
+    grid-auto-flow: column;
+    font-family: "roboto";
+    transform: unset;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+  }
+
+  .nav__link {
+    font-size: 1rem;
+    letter-spacing: none;
+  }
+}
+
+/* imagenes generales */
+
+/* FOOTER GENERAL */
 #indexfooter {
   background-color: #151623;
   padding: 10px;
   display: grid;
+
   .indexderechos {
     @include flexdi(row);
     justify-content: center;
-  color: #babdc5;
-}
-#redessocialestexto {
-  @extend %texto;
-  color: #babdc5;   
-}
-.logoderedes {
-  @include flex(flex,center,center);
-  flex-direction: row-reverse;
-  @include flexdi(row-reverse);
-  margin-left: 5px;
+    color: #babdc5;
+  }
+
+  #redessocialestexto {
+    @extend %texto;
+    color: #babdc5;
+  }
+
+  .logoderedes {
+    @include flex(flex, center, center);
+    flex-direction: row-reverse;
+    @include flexdi(row-reverse);
+    margin-left: 5px;
 
 
-}
-#indexderechos {
-  display: grid;
-  justify-content: center;
-  color: #babdc5;
-}
+  }
+
+  #indexderechos {
+    display: grid;
+    justify-content: center;
+    color: #babdc5;
+  }
 }
 
-footer img 
-{
+footer img {
   width: 40px;
   display: flex;
   @include flexdi(column-reverse);
 }
+
 .logoderedes a {
   margin-left: 1%;
   @extend %texto;
   justify-content: center;
 }
+
 /* variableeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 
-h1 , h3{
+h1,
+h3 {
   text-align: center;
 }
 
@@ -277,4 +288,3 @@ h1 , h3{
   height: 250px;
   justify-content: center;
 }
-

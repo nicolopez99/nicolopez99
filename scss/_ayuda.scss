@@ -1,4 +1,3 @@
-
 /*page ayuda*/
 
 
@@ -7,10 +6,11 @@
   background-color: rgb(183, 201, 201);
   background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
   gap: 20px;
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   @include texto(center);
   @include flexdi(column);
-  .h1ayuda{
+
+  .h1ayuda {
     color: white;
   }
 
@@ -19,8 +19,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    .inputayuda{
-      border: solid 1px; color: gray;
+
+    .inputayuda {
+      border: solid 1px;
+      color: gray;
       border-radius: 10px;
       height: 30px;
     }
@@ -34,20 +36,20 @@
 }
 
 .subtitulo {
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   @include texto(center);
   height: 50px;
   margin-top: 10px;
 }
 
 .iconos {
-@include flex( flex,center,center);
+  @include flex(flex, center, center);
   margin-top: 10px;
   height: 300px;
 }
 
 .cajasiconos {
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   @include flexdi(column);
   background-color: #FFFFFF;
   width: 25%;
@@ -59,7 +61,7 @@
   border: 1px solid gray;
 
   .textcenter {
-  @include texto(center);
+    @include texto(center);
 
   }
 
@@ -67,7 +69,7 @@
 
 .subtitulo2 {
 
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   @include flexdi(column);
 }
 
@@ -89,7 +91,7 @@
 }
 
 .subcategorias1 {
-  @include flex(flex,center,flex-start);
+  @include flex(flex, center, flex-start);
 
 
   gap: 4%;
@@ -97,7 +99,7 @@
 }
 
 .masbusquedas {
-  @include flex(flex,center,space-between);
+  @include flex(flex, center, space-between);
   background-color: white;
   width: 48%;
   height: 80px;
@@ -110,18 +112,20 @@
 .correo {
   height: 300px;
   background-color: white;
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
   @include flexdi(row);
 
   .correoflex {
-    @include flex(flex,center,center);
+    @include flex(flex, center, center);
     @include flexdi(column);
-    .inputayuda2{
+
+    .inputayuda2 {
       border: solid 1px;
       color: gray;
       border-radius: 10px;
       height: 40px;
     }
+
     .imgcorreo {
       height: 85px;
 
@@ -130,7 +134,7 @@
 }
 
 .divflexayuda {
-  @include flex(flex,center,center);
+  @include flex(flex, center, center);
 
 
 }
