@@ -116,6 +116,15 @@
     @include texto(center);
   }
 }
+/*media queris de blog*/
+@media (max-width: 768px){
+  .ingresatucorreo{
+    @include flex(flex,center,center);
+    gap: 1px;
+    flex-direction: column;
+}
+
+}
 
 
 /* media queris del page ventas */

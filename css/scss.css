@@ -329,6 +329,9 @@ h1, h3 {
   background-color: #4300d2;
   color: white;
 }
+.index #mainindex .btn:hover {
+  background-color: blueviolet;
+}
 
 .mujer {
   max-width: 100%;
@@ -398,6 +401,10 @@ h1, h3 {
 .titulodecajasindex .textodivpadre {
   text-align: start;
   margin-left: 10px;
+  font-size: larger;
+}
+.titulodecajasindex .txtred {
+  color: red;
 }
 
 .cajasindex2 {
@@ -490,17 +497,13 @@ h1, h3 {
 /*usuario*/
 /* pages usuario */
 .bodyusuario .usuario {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(255, 255, 255);
 }
 .bodyusuario .image-container {
   min-height: 100%;
   display: flex;
   align-items: center;
 }
-.bodyusuario .img-fluid {
-  min-height: -webkit-fill-available;
-}
-
 .btn {
   background-color: rgb(65, 165, 247);
   transition: background-color 0.3s, color 0.3s;
@@ -802,6 +805,12 @@ h1, h3 {
   color: white;
 }
 
+.ingresatucorreo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*medias queris*/
 /*media queris index*/
 @media (max-width: 768px) {
@@ -907,6 +916,16 @@ h1, h3 {
   .textcenter {
     margin-left: 10px;
     text-align: center;
+  }
+}
+/*media queris de blog*/
+@media (max-width: 768px) {
+  .ingresatucorreo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    flex-direction: column;
   }
 }
 /* media queris del page ventas */

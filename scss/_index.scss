@@ -65,7 +65,9 @@
       background-color: #4300d2;
       color: white;
     }
-
+    .btn:hover{
+      background-color: blueviolet;
+    }
   }
 }
 
@@ -142,9 +144,13 @@
 
   .textodivpadre{
     @include texto(start);
-    margin-left: 10px
+    margin-left: 10px;
+    font-size: larger;
+   
   }
-
+ .txtred{
+      color: red
+    }
 }
 
 .cajasindex2 {
