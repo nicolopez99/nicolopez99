@@ -89,7 +89,7 @@ while (monto !== "Fin") {
             console.log("Importe total a abonar $:", resultado_del_prestamo);
             console.log("cantidas de cuotas:", cuotas);
             ; console.log("De $:", cuotas_valor);
-            console.log("Tienes un Descuento del 0.05% por ser cliente ");
+            console.log("Tienes un Descuento del 0.07% por ser cliente ");
             console.log("Descuento Por ser cliente BBVA pagas $:", resultado_descuento);
             console.log("Cuotas para cancelación:", cuotas);
             console.log("De $:", cuotas_valor_descuentos);
