@@ -6,19 +6,19 @@ function calcular_prestamo(monto, cuotas) {
         return monto
     }
     else if (cuotas == 12 && monto > 0) {
-        prestamos_final = monto + (monto * 0.55);
+        prestamos_final = monto + (monto * 0.35);
         return prestamos_final
     }
     else if (cuotas == 24 && monto > 0) {
-        prestamos_final = monto + (monto * 1.1);
+        prestamos_final = monto + (monto * 0.95);
         return prestamos_final
     }
     else if (cuotas == 32 && monto > 0){
-        prestamos_final = monto + (monto * 2.1);
+        prestamos_final = monto + (monto * 1.6);
         return prestamos_final
     }
     else if (cuotas == 72 && monto > 0){
-        prestamos_final = monto + (monto * 3.5);
+        prestamos_final = monto + (monto * 3.0);
         return prestamos_final
     }
 }
@@ -27,7 +27,7 @@ function calcular_prestamo(monto, cuotas) {
 function descuento_cliente ( prestamo , cliente){
 
     if( cliente == "si" ){
-        let descuento_cliente = prestamo - ( prestamo * 0.05);
+        let descuento_cliente = prestamo - ( prestamo * 0.07);
         
         return descuento_cliente
     }
@@ -76,7 +76,7 @@ while (monto !== "Fin") {
             console.log("Importe total a abonar $:", resultado_del_prestamo);
             console.log("cantidas de cuotas:", cuotas);
             ;console.log("De $:", cuotas_valor);
-            console.log("Tienes un Descuento del 0.05% por ser cliente ")
+            console.log("Tienes un Descuento del 0.07% por ser cliente ")
             console.log("Descuento Por ser cliente BBVA pagas $:",resultado_descuento);
             console.log("Cuotas para cancelación:", cuotas);
             console.log("De $:", cuotas_valor_descuentos);
