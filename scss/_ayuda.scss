@@ -1,148 +1,136 @@
 /*page ayuda*/
 
-#quienessomos {
 
+.quienessomosdiv {
+  height: 25vh;
+  background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
+  gap: 20px;
+  @include flex(flex, center, center);
+  @include texto(center);
+  @include flexdi(column);
 
-  .quienessomosdiv {
-    height: 25vh;
-    background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
-    gap: 20px;
-    @include flex(flex, center, center);
+  .h1ayuda {
+    color: white;
+  }
+
+  .barradebusqueda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .inputayuda {
+      border: solid 1px;
+      @extend %letras-gris;
+      border-radius: 10px;
+      height: 30px;
+    }
+
+  }
+}
+
+.sectionquienes {
+  background-color: map-get($fondo , fondo-blanco);
+  height: 350px;
+}
+
+.subtitulo {
+  @include flex(flex, center, center);
+  @include texto(center);
+  height: 50px;
+  margin-top: 10px;
+}
+
+.iconos {
+  @include flex(flex, center, center);
+  margin-top: 10px;
+  height: 300px;
+}
+
+.cajasiconos {
+  @include flex(flex, center, center);
+  @include flexdi(column);
+  background-color: map-get($fondo , fondo-blanco);
+  width: 25%;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 8px;
+  gap: 10px;
+  border: 1px solid gray;
+
+  .textcenter {
     @include texto(center);
+
+  }
+
+}
+
+.subtitulo2 {
+
+  @include flex(flex, center, center);
+  @include flexdi(column);
+}
+
+
+.sectionquienes2 {
+  background-color: map-get($fondo , fondo-gris);
+
+  display: flex;
+  @include flexdi(column);
+  gap: 25px;
+
+}
+
+.textoseparacion {
+  margin-left: 25px;
+}
+
+.subcategorias1 {
+  @include flex(flex, center, flex-start);
+
+
+  gap: 4%;
+
+}
+
+.masbusquedas {
+  @include flex(flex, center, space-between);
+  background-color: map-get($fondo , fondo-blanco);
+  width: 48%;
+  height: 80px;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 2%;
+  border: 1px solid gray;
+  border-radius: 20px;
+
+  .divflexayuda {
+    @include flex(flex, center, center);
+
+
+  }
+}
+
+.correo {
+  height: 300px;
+  background-color: map-get($fondo , fondo-blanco);
+  @include flex(flex, center, center);
+  @include flexdi(row);
+
+  .correoflex {
+    @include flex(flex, center, center);
     @include flexdi(column);
 
-    .h1ayuda {
-      color: white;
+    .inputayuda2 {
+      border: solid 1px;
+      @extend %letras-gris;
+      border-radius: 10px;
+      height: 40px;
     }
 
-    .barradebusqueda {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+    .imgcorreo {
+      height: 85px;
 
-      .inputayuda {
-        border: solid 1px;
-        @extend %letras-gris;
-        border-radius: 10px;
-        height: 30px;
-      }
-
-    }
-
-
-    .sectionquienes {
-      background-color: map-get($fondo , fondo-blanco);
-      height: 350px;
-
-
-      .subtitulo {
-        @include flex(flex, center, center);
-        @include texto(center);
-        height: 50px;
-        margin-top: 10px;
-      }
-
-      .iconos {
-        @include flex(flex, center, center);
-        margin-top: 10px;
-        height: 300px;
-
-        .cajasiconos {
-          @include flex(flex, center, center);
-          @include flexdi(column);
-          background-color: map-get($fondo , fondo-blanco);
-          width: 25%;
-          height: 200px;
-          margin: 10px;
-          border: 1px solid var(--color-neutral-300);
-          border-radius: 8px;
-          gap: 10px;
-          border: 1px solid gray;
-
-          .textcenter {
-            @include texto(center);
-
-          }
-
-        }
-      }
-
-
-
-
-
-    }
-
-    .sectionquienes2 {
-      background-color: map-get($fondo , fondo-gris);
-
-      display: flex;
-      @include flexdi(column);
-      gap: 25px;
-
-      .subtitulo2 {
-
-        @include flex(flex, center, center);
-        @include flexdi(column);
-      }
-
-
-
-      .textoseparacion {
-        margin-left: 25px;
-      }
-
-      .subcategorias1 {
-        @include flex(flex, center, flex-start);
-
-
-        gap: 4%;
-
-        .masbusquedas {
-          @include flex(flex, center, space-between);
-          background-color: map-get($fondo , fondo-blanco);
-          width: 48%;
-          height: 80px;
-          border: 1px solid var(--color-neutral-300);
-          border-radius: 2%;
-          border: 1px solid gray;
-          border-radius: 20px;
-
-          .divflexayuda {
-            @include flex(flex, center, center);
-
-
-          }
-        }
-      }
-    }
-
-    aside {
-
-      .correo {
-        height: 300px;
-        background-color: map-get($fondo , fondo-blanco);
-        @include flex(flex, center, center);
-        @include flexdi(row);
-
-        .correoflex {
-          @include flex(flex, center, center);
-          @include flexdi(column);
-
-          .inputayuda2 {
-            border: solid 1px;
-            @extend %letras-gris;
-            border-radius: 10px;
-            height: 40px;
-          }
-
-          .imgcorreo {
-            height: 85px;
-
-          }
-        }
-      }
     }
   }
 }

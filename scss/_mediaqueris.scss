@@ -1,41 +1,5 @@
 /*media queris index*/
 
-
-/* MEDIAQUERIS MENU HAMBURGUESA */
-@media (min-width: 768px) {
-  .ocultar {
-    display: none;
-    gap: 1.5em;
-    letter-spacing: 2px;
-  }
-
-  .nav {
-    --state-hamburguer: scale(0);
-    --state-menu: translate(0);
-  }
-
-  .nav:target {
-    --state-close: scale(0);
-  }
-
-  .nav__links {
-    padding: 0;
-    background-color: unset;
-    position: unset;
-    gap: 1.5em;
-    grid-auto-flow: column;
-    font-family: "roboto";
-    transform: unset;
-    grid-column: -2/-1;
-    grid-row: 1/2;
-  }
-
-  .nav__link {
-    font-size: 1rem;
-    letter-spacing: none;
-  }
-}
-
 @media (max-width: 768px) {
   .mainindex {
     @include flex(flex, center, center);
@@ -109,7 +73,7 @@
 
 
   .sectionquienes2 {
-    background-color: map-get($fondo , fondo-gris );
+    background-color: map-get($fondo , fondo-gris);
     display: flex;
     @include flexdi(column);
     gap: 0px;
@@ -124,7 +88,7 @@
   }
 
   .sectionquienes {
-    background-color: map-get($fondo , fondo-gris );
+    background-color: map-get($fondo , fondo-gris);
     height: auto;
 
   }
@@ -132,7 +96,7 @@
 
   .masbusquedas {
     @include flex(flex, center, space-between);
-    background-color: map-get($fondo , fondo-blanco );
+    background-color: map-get($fondo , fondo-blanco);
     width: 100%;
     height: 80px;
     border: 1px solid var(--color-neutral-300);
@@ -166,7 +130,7 @@
     gap: 1px;
     flex-direction: column;
   }
-  
+
 }
 
 
@@ -181,7 +145,7 @@
   }
 
   #ventasbody {
-    background-color: map-get($fondo , fondo-blanco );
+    background-color: map-get($fondo , fondo-blanco);
   }
 
   .card .front img {
@@ -198,7 +162,7 @@
 
   .bodyusuario,
   .usuario {
-    background-color: map-get($fondo , fondo-blanco );
+    background-color: map-get($fondo , fondo-blanco);
   }
 
   .img-fluid {

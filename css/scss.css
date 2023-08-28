@@ -4,24 +4,36 @@
   background-color: rgb(255, 255, 255);
 }
 
-.index #mainindex .textoindex, .index #mainindex .flexindex, .index #mainindex, .logoderedes a, #indexfooter #redessocialestexto {
+.index #mainindex .textoindex,
+.index #mainindex .flexindex,
+.index #mainindex,
+.logoderedes a,
+#indexfooter #redessocialestexto {
   text-align: center;
 }
 
 #mainblog {
   background: rgb(17, 231, 221);
-  background: linear-gradient(45deg, rgb(17, 231, 221) 19%, rgb(47, 221, 162) 60%, rgb(4, 173, 236) 100%);
+  background: linear-gradient(
+    45deg,
+    rgb(17, 231, 221) 19%,
+    rgb(47, 221, 162) 60%,
+    rgb(4, 173, 236) 100%
+  );
 }
 
 #mainblog .nav_item2 .minimenu {
   color: gray;
 }
 
-.mainventas .sectionventas .artventas .mejoresofertas .puntos, .mainventas .sectionventas .artventas .mejoresofertas .precio, .mainventas .sectionventas .artventas .mejoresofertas .dias {
+.mainventas .sectionventas .artventas .mejoresofertas .puntos,
+.mainventas .sectionventas .artventas .mejoresofertas .precio,
+.mainventas .sectionventas .artventas .mejoresofertas .dias {
   border-top: 1px solid gray;
 }
 
-.correo .correoflex .inputayuda2, .quienessomosdiv .barradebusqueda .inputayuda {
+.correo .correoflex .inputayuda2,
+.quienessomosdiv .barradebusqueda .inputayuda {
   color: gray;
 }
 
@@ -143,6 +155,36 @@ body {
   margin-bottom: 0;
 }
 
+/* MEDIAQUERIS MENU HAMBURGUESA */
+@media (min-width: 768px) {
+  .ocultar {
+    display: none;
+    gap: 1.5em;
+    letter-spacing: 2px;
+  }
+  .nav {
+    --state-hamburguer: scale(0);
+    --state-menu: translate(0);
+  }
+  .nav:target {
+    --state-close: scale(0);
+  }
+  .nav__links {
+    padding: 0;
+    background-color: unset;
+    position: unset;
+    gap: 1.5em;
+    grid-auto-flow: column;
+    font-family: "roboto";
+    transform: unset;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+  }
+  .nav__link {
+    font-size: 1rem;
+    letter-spacing: none;
+  }
+}
 /* imagenes generales */
 /* FOOTER GENERAL */
 #indexfooter {
@@ -246,19 +288,6 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.index #mainindex #ofertass .indexvermas {
-  background-color: #4300d2;
-  border: none;
-  border-radius: 24px;
-  padding: 0 20px;
-  height: 48px;
-  color: white;
-}
-.index #mainindex #ofertass .indexvermas:hover {
-  background-color: blueviolet;
-  box-shadow: #181818;
-  cursor: pointer;
-}
 .index #mainindex .offcanvas {
   background-color: bisque;
 }
@@ -269,7 +298,8 @@ h3 {
 .index #mainindex .btn:hover {
   background-color: blueviolet;
 }
-.index #mainindex .mujer {
+
+.mujer {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
@@ -277,7 +307,8 @@ h3 {
   border: solid 0.7px #ccc;
   background-color: white;
 }
-.index #mainindex .mujer .linkmujer {
+
+.linkmujer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,11 +323,8 @@ h3 {
   border: solid 0.7px #ccc;
   background-color: white;
 }
-.index #mainindex .mujer .linkmujer .linktexto {
-  color: white;
-  text-decoration: none;
-}
-.index #mainindex .mujer img {
+
+.mujer img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -304,20 +332,28 @@ h3 {
   width: 100%;
   height: 315px;
 }
-.index #mainindex .section2index {
+
+.linktexto {
+  color: white;
+  text-decoration: none;
+}
+
+.section2index {
   margin-top: 10px;
   margin-bottom: 25px;
   background-color: #f5f5f5;
   gap: 80px;
 }
-.index #mainindex .section2index .divpadre {
+
+.divpadre {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   flex-direction: column;
 }
-.index #mainindex .section2index .divpadre .titulodecajasindex {
+
+.titulodecajasindex {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -328,22 +364,33 @@ h3 {
   font-size: 35px;
   border-radius: 20px;
 }
-.index #mainindex .section2index .divpadre .titulodecajasindex .textodivpadre {
+.titulodecajasindex .textodivpadre {
   text-align: start;
   margin-left: 10px;
   font-size: larger;
 }
-.index #mainindex .section2index .divpadre .titulodecajasindex .txtred {
+.titulodecajasindex .txtred {
   color: red;
 }
-.index #mainindex .section2index .cajasindex2 {
+
+.cajasindex2 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-.index #mainindex .section2index .cajasindex2 .divprueba1, .index #mainindex .section2index .cajasindex2 .divprueba2, .index #mainindex .section2index .cajasindex2 .divprueba3 {
+
+.divpadre2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divprueba1,
+.divprueba2,
+.divprueba3 {
   background-color: white;
   border-radius: 8px;
   height: 154px;
@@ -354,17 +401,16 @@ h3 {
   flex-direction: column;
   border: 1px solid #ccc;
 }
-.index #mainindex .section2index .cajasindex2 .imgbonificaciones {
-  margin-left: 20px;
-  width: 50px;
-}
-.index #mainindex .divpadre2 {
+
+.botonvermas {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 145px;
+  width: 100%;
 }
-.index #mainindex .divpadre2 .cajapadre2 {
+
+.cajapadre2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -372,7 +418,7 @@ h3 {
   height: 50%;
   width: 100%;
 }
-.index #mainindex .divpadre2 .cajapadre2 .mujerpensando {
+.cajapadre2 .mujerpensando {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -380,15 +426,38 @@ h3 {
   width: 100%;
   border-radius: 10px;
 }
-.index #mainindex .botonvermas {
+
+.cajapadre3 {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 145px;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
   width: 100%;
 }
-.index #mainindex .textobonificaiones {
+
+.imgbonificaciones {
   margin-left: 20px;
+  width: 50px;
+}
+
+.textobonificaiones {
+  margin-left: 20px;
+}
+
+.indexvermas {
+  background-color: #4300d2;
+  border: none;
+  border-radius: 24px;
+  padding: 0 20px;
+  height: 48px;
+  color: white;
+}
+
+.indexvermas:hover {
+  background-color: blueviolet;
+  box-shadow: #181818;
+  cursor: pointer;
 }
 
 /*usuario*/
@@ -396,25 +465,23 @@ h3 {
 .bodyusuario .usuario {
   background-color: rgb(255, 255, 255);
 }
-.bodyusuario .image-container {
+.bodyusuario .usuario .image-container {
   min-height: 100%;
   display: flex;
   align-items: center;
 }
-
-.btn {
-  background-color: rgb(65, 165, 247);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.btn:hover {
-  background-color: blueviolet;
-}
-
-.usuarioform {
+.bodyusuario .usuario .usuarioform {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.bodyusuario .usuario .usuarioform .btn {
+  background-color: blueviolet;
+  transition: background-color 0.3s, color 0.3s;
+}
+.bodyusuario .usuario .usuarioform .btn:hover {
+  background-color: rgb(7, 30, 105);
+  color: aliceblue;
 }
 
 /*quienes somos*/
@@ -557,7 +624,12 @@ h3 {
   justify-content: center;
   flex-direction: column;
   row-gap: 10px;
-  background: linear-gradient(239deg, rgb(255, 255, 255) 0%, rgb(248, 255, 213) 50%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(
+    239deg,
+    rgb(255, 255, 255) 0%,
+    rgb(248, 255, 213) 50%,
+    rgb(255, 255, 255) 100%
+  );
 }
 .mainventas .sectionventas {
   display: flex;
@@ -596,11 +668,19 @@ h3 {
 .mainventas .sectionventas .artventas .mejoresofertas .comprar {
   border: white;
   background: rgb(201, 97, 244);
-  background: linear-gradient(180deg, rgb(201, 97, 244) 38%, rgb(138, 29, 250) 69%);
+  background: linear-gradient(
+    180deg,
+    rgb(201, 97, 244) 38%,
+    rgb(138, 29, 250) 69%
+  );
 }
 .mainventas .sectionventas .artventas .mejoresofertas .comprar:hover {
   background: rgb(177, 41, 219);
-  background: linear-gradient(4deg, rgb(177, 41, 219) 0%, rgb(109, 93, 127) 100%);
+  background: linear-gradient(
+    4deg,
+    rgb(177, 41, 219) 0%,
+    rgb(109, 93, 127) 100%
+  );
 }
 .mainventas .sectionventas .artventas .mejoresofertas #promocion1 {
   background: rgb(195, 34, 34);
@@ -646,19 +726,22 @@ h3 {
   width: 100%;
   object-fit: cover;
 }
-
-.ofertastiempolimite {
+.mainventas .ofertastiempolimite {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   background: rgb(110, 0, 181);
-  background: linear-gradient(90deg, rgb(110, 0, 181) 0%, rgb(209, 64, 73) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(110, 0, 181) 0%,
+    rgb(209, 64, 73) 100%
+  );
   border: solid 1px white;
   text-align: center;
 }
-.ofertastiempolimite .promocion2 {
+.mainventas .ofertastiempolimite .promocion2 {
   color: rgb(243, 243, 243);
   margin-right: 20px;
 }
@@ -698,36 +781,6 @@ h3 {
 
 /*medias queris*/
 /*media queris index*/
-/* MEDIAQUERIS MENU HAMBURGUESA */
-@media (min-width: 768px) {
-  .ocultar {
-    display: none;
-    gap: 1.5em;
-    letter-spacing: 2px;
-  }
-  .nav {
-    --state-hamburguer: scale(0);
-    --state-menu: translate(0);
-  }
-  .nav:target {
-    --state-close: scale(0);
-  }
-  .nav__links {
-    padding: 0;
-    background-color: unset;
-    position: unset;
-    gap: 1.5em;
-    grid-auto-flow: column;
-    font-family: "roboto";
-    transform: unset;
-    grid-column: -2/-1;
-    grid-row: 1/2;
-  }
-  .nav__link {
-    font-size: 1rem;
-    letter-spacing: none;
-  }
-}
 @media (max-width: 768px) {
   .mainindex {
     display: flex;

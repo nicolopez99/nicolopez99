@@ -3,12 +3,12 @@
 
   /* contenido principal de index */
   #mainindex {
-    background-color: map-get($fondo, fondo-index);
+    background-color: map-get($fondo , fondo-index);
     font-family: "roboto";
     @extend %texto;
 
     #vacciones {
-      background-color: map-get($fondo, fondo-index);
+      background-color: map-get($fondo , fondo-index);
       margin-bottom: 0px;
     }
 
@@ -17,6 +17,7 @@
       height: 75vh;
       @include flex(flex, center, center);
 
+
       .banerindex {
         height: 100%;
         width: 100%;
@@ -24,8 +25,11 @@
         background-position: center;
         max-width: 100%;
         object-fit: cover;
+
       }
+
     }
+
 
     .indexsection {
       background-position: right;
@@ -52,166 +56,189 @@
     #ofertass {
       margin-top: 10px;
       margin-bottom: 10px;
-
-      .indexvermas {
-        background-color: #4300d2;
-        border: none;
-        border-radius: 24px;
-        padding: 0 20px;
-        height: 48px;
-        color: white;
-      }
-
-      .indexvermas:hover {
-        background-color: blueviolet;
-        box-shadow: #181818;
-        cursor: pointer;
-      }
     }
 
-
-
-    .mujer {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
-      border: solid 0.7px #ccc;
-      background-color: map-get($fondo, fondo-blanco);
-
-      .linkmujer {
-        @include flex(flex, center, center);
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        color: #181818;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
-        border: solid 0.7px #ccc;
-        background-color: map-get($fondo, fondo-blanco);
-
-        .linktexto {
-          color: white;
-          text-decoration: none;
-        }
-      }
+    .offcanvas {
+      background-color: bisque;
     }
 
-    .mujer img {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-      max-height: 100%;
-      width: 100%;
-      height: 315px;
+    .btn {
+      background-color: #4300d2;
+      color: white;
     }
 
-    .section2index {
-      margin-top: 10px;
-      margin-bottom: 25px;
-      background-color: map-get($fondo, fondo-index);
-
-      gap: 80px;
-
-      .divpadre {
-        @include flex(flex, center, center);
-        gap: 20px;
-
-        @include flexdi(column);
-
-        .titulodecajasindex {
-          @include flex(flex, center, center);
-          background-color: map-get($fondo, fondo-blanco);
-
-          @include texto(start);
-          width: 100%;
-          height: 350px;
-          font-size: 35px;
-          border-radius: 20px;
-
-          .textodivpadre {
-            @include texto(start);
-            margin-left: 10px;
-            font-size: larger;
-          }
-
-          .txtred {
-            color: red;
-          }
-        }
-      }
-
-      .cajasindex2 {
-        @include flex(flex, center, center);
-        flex-wrap: wrap;
-        gap: 20px;
-
-        .divprueba1,
-        .divprueba2,
-        .divprueba3 {
-          background-color: map-get($fondo, fondo-blanco);
-          border-radius: 8px;
-          height: 154px;
-          width: 220px;
-          @include flex(flex, center, space-around);
-          @include flexdi(column);
-          border: 1px solid #ccc;
-        }
-
-        .imgbonificaciones {
-          margin-left: 20px;
-          width: 50px;
-        }
-
-        .botonvermas {
-          @include flex(flex, center, flex-start);
-          margin-left: 145px;
-          width: 100%;
-        }
-
-        .textobonificaiones {
-          margin-left: 20px;
-        }
-      }
-    }
-
-    .divpadre2 {
-      @include flex(flex, stretch, center);
-      @include flexdi(column);
-
-      .cajapadre2 {
-        @include flex(flex, center, flex-end);
-        @include flexdi(column);
-        height: 50%;
-        width: 100%;
-
-        .mujerpensando {
-          max-width: 100%;
-          height: auto;
-          object-fit: cover;
-          max-height: 100%;
-          width: 100%;
-          border-radius: 10px;
-        }
-      }
-    }
-
-    aside {
-
-      .offcanvas {
-        background-color: bisque;
-      }
-
-      .btn {
-        background-color: #4300d2;
-        color: white;
-      }
-
-      .btn:hover {
-        background-color: blueviolet;
-      }
+    .btn:hover {
+      background-color: blueviolet;
     }
   }
+}
+
+.mujer {
+
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
+  border: solid 0.7px #ccc;
+  background-color: map-get($fondo , fondo-blanco);
+}
+
+.linkmujer {
+  @include flex(flex, center, center);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color: #181818;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
+  border: solid 0.7px #ccc;
+  background-color: map-get($fondo , fondo-blanco);
+
+}
+
+
+.mujer img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+  height: 315px;
+
+}
+
+.linktexto {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.section2index {
+
+  margin-top: 10px;
+  margin-bottom: 25px;
+  background-color: map-get($fondo , fondo-index);
+
+
+  gap: 80px;
+}
+
+.divpadre {
+  @include flex(flex, center, center);
+  gap: 20px;
+
+  @include flexdi(column);
+
+}
+
+.titulodecajasindex {
+
+  @include flex(flex, center, center);
+  background-color: map-get($fondo , fondo-blanco);
+
+
+  @include texto(start);
+  width: 100%;
+  height: 350px;
+  font-size: 35px;
+  border-radius: 20px;
+
+  .textodivpadre {
+    @include texto(start);
+    margin-left: 10px;
+    font-size: larger;
+
+  }
+
+  .txtred {
+    color: red
+  }
+}
+
+.cajasindex2 {
+  @include flex(flex, center, center);
+  flex-wrap: wrap;
+  gap: 20px;
+
+
+}
+
+.divpadre2 {
+  @include flex(flex, stretch, center);
+  @include flexdi(column);
+
+
+
+}
+
+.divprueba1,
+.divprueba2,
+.divprueba3 {
+  background-color: map-get($fondo , fondo-blanco);
+  border-radius: 8px;
+  height: 154px;
+  width: 220px;
+  @include flex(flex, center, space-around);
+  @include flexdi(column);
+  border: 1px solid #ccc;
+}
+
+.botonvermas {
+  @include flex(flex, center, flex-start);
+  margin-left: 145px;
+  width: 100%;
+}
+
+.cajapadre2 {
+  @include flex(flex, center, flex-end);
+  @include flexdi(column);
+  height: 50%;
+  width: 100%;
+
+  .mujerpensando {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+}
+
+.cajapadre3 {
+
+  @include flex(flex, stretch, center);
+  @include flexdi(column);
+  height: 50%;
+  width: 100%;
+
+
+}
+
+.imgbonificaciones {
+  margin-left: 20px;
+  width: 50px;
+}
+
+.textobonificaiones {
+  margin-left: 20px;
+}
+
+.indexvermas {
+  background-color: #4300d2;
+  border: none;
+  border-radius: 24px;
+  padding: 0 20px;
+  height: 48px;
+  color: white;
+}
+
+.indexvermas:hover {
+  background-color: blueviolet;
+  box-shadow: #181818;
+  cursor: pointer;
 }

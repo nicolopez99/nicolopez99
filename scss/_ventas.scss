@@ -2,7 +2,7 @@
   @include flex(flex, center, center);
   @include flexdi(column);
   row-gap: 10px;
-  
+
   background: linear-gradient(239deg, rgba(255, 255, 255, 1) 0%, rgba(248, 255, 213, 1) 50%, rgba(255, 255, 255, 1) 100%);
 
   .sectionventas {
@@ -101,19 +101,19 @@
 
     }
   }
-}
 
-.ofertastiempolimite {
-  width: 100%;
-  @include flex(flex, center, center);
-  @include flew(wrap);
-  background: rgb(110, 0, 181);
-  background: linear-gradient(90deg, rgba(110, 0, 181, 1) 0%, rgba(209, 64, 73, 1) 100%);
-  border: solid 1px white;
-  @include texto(center);
+  .ofertastiempolimite {
+    width: 100%;
+    @include flex(flex, center, center);
+    @include flew(wrap);
+    background: rgb(110, 0, 181);
+    background: linear-gradient(90deg, rgba(110, 0, 181, 1) 0%, rgba(209, 64, 73, 1) 100%);
+    border: solid 1px white;
+    @include texto(center);
 
-  .promocion2 {
-    color: rgb(243, 243, 243);
-    margin-right: 20px;
+    .promocion2 {
+      color: rgb(243, 243, 243);
+      margin-right: 20px;
+    }
   }
 }
