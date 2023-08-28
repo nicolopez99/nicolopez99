@@ -1,5 +1,41 @@
 /*media queris index*/
 
+
+/* MEDIAQUERIS MENU HAMBURGUESA */
+@media (min-width: 768px) {
+  .ocultar {
+    display: none;
+    gap: 1.5em;
+    letter-spacing: 2px;
+  }
+
+  .nav {
+    --state-hamburguer: scale(0);
+    --state-menu: translate(0);
+  }
+
+  .nav:target {
+    --state-close: scale(0);
+  }
+
+  .nav__links {
+    padding: 0;
+    background-color: unset;
+    position: unset;
+    gap: 1.5em;
+    grid-auto-flow: column;
+    font-family: "roboto";
+    transform: unset;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+  }
+
+  .nav__link {
+    font-size: 1rem;
+    letter-spacing: none;
+  }
+}
+
 @media (max-width: 768px) {
   .mainindex {
     @include flex(flex, center, center);

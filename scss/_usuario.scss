@@ -4,32 +4,30 @@
     .usuario {
       background-color: rgb(255 255 255);
 
+
+
+      .image-container {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+
+      .usuarioform {
+        display: flex;
+        justify-content: center;
+        @include flexdi(column);
+
+        .btn {
+          background-color: blueviolet;
+          transition: background-color 0.3s, color 0.3s;
+
+        }
+
+        .btn:hover {
+          background-color: rgb(183, 127, 235);
+
+        }
+      }
     }
-
-    .image-container {
-      min-height: 100%;
-      display: flex;
-      align-items: center;
-    }
-
-
-  }
-
-  .btn {
-    background-color: rgb(65, 165, 247);
-    transition: background-color 0.3s, color 0.3s;
-
-  }
-
-  .btn:hover {
-    background-color: blueviolet;
-
-  }
-
-
-
-  .usuarioform {
-    display: flex;
-    justify-content: center;
-    @include flexdi(column);
   }
