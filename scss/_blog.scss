@@ -24,7 +24,7 @@
 
      .minimenu {
        text-decoration: none;
-       color: gray;
+       @extend %color-gris;
 
 
      }

@@ -1,15 +1,17 @@
-@mixin flex($display, $ejeY, $ejeX)
-{
+@mixin flex($display, $ejeY, $ejeX) {
     display: $display;
     align-items: $ejeY;
-    justify-content: $ejeX;    
+    justify-content: $ejeX;
 }
 
-@mixin texto($vertical){
-    text-align: $vertical;}
-@mixin flexdi($flex-direcion,){
+@mixin texto($vertical) {
+    text-align: $vertical;
+}
+
+@mixin flexdi($flex-direcion, ) {
     flex-direction: $flex-direcion;
 }
-@mixin flew($flex-warp){
+
+@mixin flew($flex-warp) {
     flex-wrap: $flex-warp;
 }

@@ -3,7 +3,6 @@
 
 .quienessomosdiv {
   height: 25vh;
-  background-color: rgb(183, 201, 201);
   background-image: linear-gradient(to right, #2c2da5 12%, #5759d1 75%);
   gap: 20px;
   @include flex(flex, center, center);
@@ -22,7 +21,7 @@
 
     .inputayuda {
       border: solid 1px;
-      color: gray;
+      @extend %letras-gris;
       border-radius: 10px;
       height: 30px;
     }
@@ -31,7 +30,7 @@
 }
 
 .sectionquienes {
-  background-color: rgb(195, 195, 223);
+  background-color: map-get($fondo , fondo-blanco );
   height: 350px;
 }
 
@@ -51,7 +50,7 @@
 .cajasiconos {
   @include flex(flex, center, center);
   @include flexdi(column);
-  background-color: #FFFFFF;
+  background-color: map-get($fondo , fondo-blanco );
   width: 25%;
   height: 200px;
   margin: 10px;
@@ -73,12 +72,9 @@
   @include flexdi(column);
 }
 
-.quienessomosayuda {
-  gap: 20px;
-}
 
 .sectionquienes2 {
-  background-color: rgb(195, 195, 223);
+  background-color: map-get($fondo , fondo-gris );
 
   display: flex;
   @include flexdi(column);
@@ -100,18 +96,23 @@
 
 .masbusquedas {
   @include flex(flex, center, space-between);
-  background-color: white;
+  background-color: map-get($fondo , fondo-blanco );
   width: 48%;
   height: 80px;
   border: 1px solid var(--color-neutral-300);
   border-radius: 2%;
   border: 1px solid gray;
   border-radius: 20px;
+.divflexayuda {
+  @include flex(flex, center, center);
+
+
+}
 }
 
 .correo {
   height: 300px;
-  background-color: white;
+  background-color: map-get($fondo , fondo-blanco );
   @include flex(flex, center, center);
   @include flexdi(row);
 
@@ -121,7 +122,7 @@
 
     .inputayuda2 {
       border: solid 1px;
-      color: gray;
+      @extend %letras-gris;
       border-radius: 10px;
       height: 40px;
     }
@@ -133,8 +134,3 @@
   }
 }
 
-.divflexayuda {
-  @include flex(flex, center, center);
-
-
-}

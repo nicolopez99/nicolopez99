@@ -1,19 +1,29 @@
 $fondo : prueba;
 
-@if $fondo == normal{
-    .usuario , .bodyusuario{   background: rgb(58,180,178);
-        background: linear-gradient(90deg, rgba(58,180,178,1) 0%, rgba(29,175,253,1) 30%, rgba(252,69,69,1) 100%);  
-        
+@if $fondo ==normal {
+
+    .usuario,
+    .bodyusuario {
+        background: rgb(58, 180, 178);
+        background: linear-gradient(90deg, rgba(58, 180, 178, 1) 0%, rgba(29, 175, 253, 1) 30%, rgba(252, 69, 69, 1) 100%);
+
     }
 }
-@else if $fondo == darkmode{
-    .usuario , .bodyusuario{
+
+@else if $fondo ==darkmode {
+
+    .usuario,
+    .bodyusuario {
         background-color: black;
     }
 
-    
+
 }
+
 @else {
-    .usuario , .bodyusuario{background-color: rgb(255, 255, 255);
-       }
+
+    .usuario,
+    .bodyusuario {
+        background-color: rgb(255, 255, 255);
+    }
 }

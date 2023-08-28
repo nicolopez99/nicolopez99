@@ -289,45 +289,4 @@
 
 .subcategorias1 {
   display: flex;
-
-  align-items: center;
-  justify-content: flex-start;
-  gap: 4%;
-}
-
-.holaa {
-  display: flex;
-  background-color: white;
-  width: 48%;
-  height: 80px;
-  border: 1px solid var(--color-neutral-300);
-  border-radius: 2%;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid gray;
-}
-
-.correo {
-  height: 300px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-
-  .correoflex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .imgcorreo {
-      height: 85px;
-    }
-  }
-}
-
-.divflexayuda {
-  display: flex;
-  align-items: center;
 }
