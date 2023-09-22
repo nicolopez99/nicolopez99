@@ -84,31 +84,25 @@ class Prestamo {
     }
 }
 
-
-
 function mostrarDetallesPrestamos() {
     const prestamoDetails = document.getElementById("prestamoDetails");
     
     if (prestamos.length === 0) {
-        prestamoDetails.innerHTML = "<p>No tiene préstamos registrados.</p>";
+        prestamoDetails.innerHTML = "No tiene préstamos registrados.";
     } else {
         let detallesHTML = "<h2>Detalles de Préstamos</h2>";
 
         prestamos.forEach((prestamo, index) => {
-            detallesHTML += `<div class="card mb-3">`;
-            detallesHTML += `<div class="card-body">`;
-            detallesHTML += `<h3 class="card-title">Préstamo #${index + 1}</h3>`;
-            detallesHTML += `<p class="card-text"><strong>DNI:</strong> ${prestamo.dni}</p>`;
-            detallesHTML += `<p class="card-text"><strong>Cuotas:</strong> ${prestamo.cuotas}</p>`;
-            detallesHTML += `<p class="card-text"><strong>Monto Solicitado:</strong> $${prestamo.monto}</p>`;
-            detallesHTML += `<p class="card-text"><strong>Monto Total a Pagar:</strong> $${prestamo.calcularPrestamo()}</p>`;
-            detallesHTML += `</div>`;
+            detallesHTML += `<div class="prestamo-info">`;
+            detallesHTML += `<h3>Préstamo #${index + 1}</h3>`;
+            detallesHTML += `<p>DNI: ${prestamo.dni}</p>`;
+            detallesHTML += `<p>Cuotas: ${prestamo.cuotas}</p>`;
+            detallesHTML += `<p>Monto Solicitado: $${prestamo.monto}</p>`;
+            detallesHTML += `<p>Monto Total a Pagar: $${prestamo.calcularPrestamo()}</p>`;
             detallesHTML += `</div>`;
         });
 
         prestamoDetails.innerHTML = detallesHTML;
     }
 }
-
-
 
