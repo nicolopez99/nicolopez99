@@ -84,25 +84,31 @@ class Prestamo {
     }
 }
 
+
+
 function mostrarDetallesPrestamos() {
     const prestamoDetails = document.getElementById("prestamoDetails");
     
     if (prestamos.length === 0) {
-        prestamoDetails.innerHTML = "No tiene préstamos registrados.";
+        prestamoDetails.innerHTML = "<p>No tiene préstamos registrados.</p>";
     } else {
         let detallesHTML = "<h2>Detalles de Préstamos</h2>";
-        detallesHTML += "<ul>";
 
         prestamos.forEach((prestamo, index) => {
-            detallesHTML += `<li>Préstamo #${index + 1} - Monto: $${prestamo.monto}, Cuotas: ${prestamo.cuotas}, DNI: ${prestamo.dni}</li>`;
+            detallesHTML += `<div class="card mb-3">`;
+            detallesHTML += `<div class="card-body">`;
+            detallesHTML += `<h3 class="card-title">Préstamo #${index + 1}</h3>`;
+            detallesHTML += `<p class="card-text"><strong>DNI:</strong> ${prestamo.dni}</p>`;
+            detallesHTML += `<p class="card-text"><strong>Cuotas:</strong> ${prestamo.cuotas}</p>`;
+            detallesHTML += `<p class="card-text"><strong>Monto Solicitado:</strong> $${prestamo.monto}</p>`;
+            detallesHTML += `<p class="card-text"><strong>Monto Total a Pagar:</strong> $${prestamo.calcularPrestamo()}</p>`;
+            detallesHTML += `</div>`;
+            detallesHTML += `</div>`;
         });
-
-        detallesHTML += "</ul>";
-
-        if (tieneOtrosPrestamos) {
-            detallesHTML += "<p>Ya tiene otros préstamos registrados.</p>";
-        }
 
         prestamoDetails.innerHTML = detallesHTML;
     }
 }
+
+
+
