@@ -6,7 +6,29 @@
     <title>Document</title>
   </head>
   <body>
-    <main>prestamos</main>
+    <main>
+      <h1>Préstamos</h1>
+      <button id="startButton">Iniciar Solicitud de Préstamo</button>
+      <form id="loanForm">
+        <label for="monto">Monto del Préstamo:</label>
+        <input type="text" id="monto" name="monto" required />
+        <label for="cuotas">Cuotas:</label>
+        <input type="number" id="cuotas" name="cuotas" required />
+        <label for="cliente">¿Eres Cliente en BBVA?:</label>
+        <select id="cliente" name="cliente">
+          <option value="si">Si</option>
+          <option value="no">No</option>
+        </select>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required />
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+      <input type="text" id="dniSearch" placeholder="Ingrese su DNI" />
+      <button id="searchButton">Buscar Préstamos</button>
+
+      <div id="prestamoDetails"></div>
+    </main>
+
     <script src="pre-entrega3.js"></script>
   </body>
 </html>
